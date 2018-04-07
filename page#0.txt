@@ -1,0 +1,481 @@
+URL:http://www.muhlenberg.edu
+Number of Relative Links:24
+Number of Absolute Links:1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- InstanceBeginEditable name="Keywords" --><meta name="keywords" content="liberal arts college, Muhlenberg College, lehigh valley, Muhlenberg, private college" /><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="Description" --><meta name="description" content="Founded in 1848, Muhlenberg College is a highly selective, private, four-year liberal arts school located in the beautiful Lehigh Valley of eastern Pennsylvania." /><!-- InstanceEndEditable -->
+
+
+    <title>Muhlenberg College</title>
+    <script src="https://code.jquery.com/jquery.js"></script>  
+    
+    <!-- KDG Related files and additives -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/owl.transitions.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/kdg.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/print.css" />
+  
+    
+    <link rel="icon" href="/media/kdmedia/images/favicon.ico">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/ie9-and-down.css" />
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <noscript>
+    <div class="noscript-modal">
+      <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+      <div class="noscript-overlay"></div>
+      <div class="modal">
+        <h3 class="red">Whoops! Please enable Javascript</h3>
+        <p>We've worked hard to update this site with the latest technology. To ensure that you are getting the best experience, please enable Javascript in your browser's settings. Thank you!</p>
+        <label class="button red" for="modal-closing-trick">
+          Close
+        </label>
+       </div>
+     </div>
+  </noscript>
+  
+  <div class="modal old-browser">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Sorry, but your browser is out of date.</h4>
+        </div>
+        <div class="modal-body">
+          <p>This website was developed using the latest technology available, and therefore requires a newer, safer browser than the one you are currently running. Use the links below to download the most up to date version of your browser and try again!</p>
+          <a class="browser-block" href="http://www.google.com/chrome" target="_blank">
+            <img src="/media/kdmedia/images/chrome.png" alt="Chrome" />
+          </a><!--
+          --><a class="browser-block" href="http://www.mozilla.org/firefox/new/" target="_blank">
+          	<img src="/media/kdmedia/images/firefox.png" alt="Firefox" />
+          </a><!--
+          --><a class="browser-block" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">
+          	<img src="/media/kdmedia/images/internet-explorer.png" alt="Internet Explorer" />
+          </a><!--
+          --><a class="browser-block" href="http://support.apple.com/downloads/#safari" target="_blank">
+          	<img src="/media/kdmedia/images/safari.png" alt="Safari" />
+          </a><!--
+          --><a class="browser-block" href="http://www.opera.com/download" target="_blank">
+          	<img src="/media/kdmedia/images/opera.png" alt="Opera" />
+          </a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    <div class="modal-backdrop fade in"></div>
+  </div><!-- /.modal -->
+  
+  <!-- navigation object : Tool I Am Links --><div class="collapse" id="iam-navigation">
+	<ul>
+        <li>
+          	<a href="/main/admissions"
+               style='background-image:url("/media/kdmedia/images/iamphotos/prospective-link.jpg");'>
+              	Prospective Student
+          	</a>
+      	</li>
+        <li>
+      		<a href="/incoming/"
+               style='background-image:url("/media/kdmedia/images/iamphotos/incoming-link.jpg");'>
+              	Incoming Student
+          	</a>	
+      	</li>
+        <li>
+      		<a href="/gateways/current-students/"
+               style='background-image:url("/media/kdmedia/images/iamphotos/current-link.jpg");'>
+              	Current Student
+          	</a>
+      	</li>
+        <li>
+      		<a href="/gateways/faculty-staff"
+               style='background-image:url("/media/kdmedia/images/iamphotos/faculty-link.jpg");'>
+              	Faculty & Staff
+          	</a>
+      	</li>
+        <li>
+      		<a href="/gateways/parents"
+               style='background-image:url("/media/kdmedia/images/iamphotos/parents-link.jpg");'>
+              	Parent
+          	</a>
+      	</li>
+      	<li>
+          	<a href="/alumni"
+               style='background-image:url("/media/kdmedia/images/iamphotos/alumni-link.jpg");'>
+              	Alumni
+          	</a>
+      	</li>
+  	</ul>
+    <div class="clearfix"></div>
+</div><div class="collapse" id="tool-navigation">
+	<ul>
+        <li>
+          	<a href="/contact">
+              	Contact
+          	</a>
+      	</li>
+        <li>
+      		<a href="/main/aboutus/campus-map/">
+              	Campus Map
+          	</a>	
+      	</li>
+        <li>
+      		<a href="/tactical/azfind.htm">
+              	A-Z Index
+          	</a>
+      	</li>
+        <li>
+      		<a href="/directory">
+              	Directory
+          	</a>
+      	</li>
+        <li>
+      		<a href="http://trexler.muhlenberg.edu/">
+              	Library
+          	</a>
+      	</li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+
+  <nav class="navbar" id="top">
+      <div class="container">
+          <div class="row">
+  		  	  <div class="expand-buttons">
+  				<ul>
+                  <a href="/alumni/give"><li class="give-btn hidden-xs">
+  						Give
+  					</li></a>
+            		<a data-toggle="collapse" data-bootstrap-collapse-help="1" href="#tool-navigation" aria-expanded="false" aria-controls="tool-navigation" class="tool-link collapsed"><li class="tool-button">
+  						Tools <span class="fa fa-caret-down"></span>
+  					</li></a>
+  					<a data-toggle="collapse" data-bootstrap-collapse-help="1" href="#iam-navigation" aria-expanded="false" aria-controls="iam-navigation" class="iam-link collapsed"><li class="iam-button">
+  						I am <span class="fa fa-caret-down"></span>
+  					</li></a>
+            		<div class="clearfix"></div>
+  				</ul>
+  			</div><!--/expand-buttons-->
+  			<div class="col-xs-12 col-sm-6">
+              <a href="/"><img src="/media/kdmedia/images/header-logo.png" alt="Muhlenberg College Logo"></a>
+  				<a data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav" class="mobile-menu hidden-lg hidden-md hidden-sm"><span class="fa fa-bars"></span></a>
+  			</div>
+  			<div class="col-xs-12 col-sm-6 hidden-xs">
+          		<div class="header-right">
+  					<div class="search ">
+                      <form action="/search/results.html" method="get" name="SearchForm" id="SearchForm">
+                			<!--<input name="q" type="text" size="0" id="q" value="" placeholder="search">-->
+                      <input name="q" type="text" id="q" value="" placeholder="search">
+                			<button type="Submit" class="btn btn-search"><span class="fa fa-search"></span></button>
+  						</form>
+              			<a target="_child" href="http://twitter.com/muhlenberg"><span class="fa fa-twitter"></span></a>
+              			<a target="_child" href="http://www.facebook.com/MuhlenbergCollege"><span class="fa fa-facebook"></span></a>
+  					</div>
+
+  				</div>
+  			</div>
+  		</div><!--row-->
+    </div>
+    <div class="inner-nav hidden-xs">
+      <div class="container">
+      	  <div class="row">
+        	  <div class="nav-holder">
+    			  <a name="navigation" style="display:none"></a>
+    			  <div class="nav">
+                      <!-- navigation object : Main Menu KD --><ul><li><a href="/main/aboutus/">About Us</a></li><li><a href="/main/admissions/">Admissions</a></li><li><a href="/academics/">Academics</a></li><li><a href="/student-life/">Student Life</a></li><li><a href="http://muhlenbergsports.com/" target="_blank">Athletics</a></li><li><a href="/news-and-events/index.php">News &amp; Events</a></li><li><a href="/main/wescoe/">Adult Learning</a></li></ul>
+    			  </div>
+    		  </div>
+          </div><!--row-->
+        </div>
+    </div>
+  </nav>
+
+  <div id="mobile-nav" class="collapse hidden-sm hidden-md hidden-lg">
+    <div class="search ">
+                      <form action="/search/results.html" method="get" name="SearchForm" id="SearchForm">
+                			<!--<input name="q" type="text" size="0" id="q" value="" placeholder="search">-->
+                      <input name="q" type="text" id="q" value="" placeholder="search">
+
+        
+        <button type="Submit" class="btn btn-search"><span class="fa fa-search"></span></button>
+      </form>
+    </div>
+    
+        
+    <!-- navigation object : Main Menu KD --><ul><li><a href="/main/aboutus/">About Us</a></li><li><a href="/main/admissions/">Admissions</a></li><li><a href="/academics/">Academics</a></li><li><a href="/student-life/">Student Life</a></li><li><a href="http://muhlenbergsports.com/" target="_blank">Athletics</a></li><li><a href="/news-and-events/index.php">News &amp; Events</a></li><li><a href="/main/wescoe/">Adult Learning</a></li></ul>
+        
+    <a target="_child" href="http://www.facebook.com/MuhlenbergCollege"><span class="fa fa-facebook"></span></a>
+    <a target="_child" href="http://twitter.com/muhlenberg"><span class="fa fa-twitter"></span></a>
+    <a href="/alumni/give" class="btn primary-btn">Give</a>
+  </div>
+
+  <div class="container">
+    <div class="row page-content">
+      <div class="row mobile-row" ><div class="one-col mosaic-page col-xs-12">
+
+      <!--Page Content-->
+        <div class="grid lg-mosaic">
+          <div class="grid-sizer"></div>
+          
+          <a href="/news/2018/stephenkoester19findshisfutureintanzania.html" target="_blank">
+            <div class="grid-item grid-item-lg img-bg big-story" style='background-image:url("/media/contentassets/images/newscenter/academics/Koester-Tanzania-2.jpg");'>
+              <div class="gradient"></div>
+              <div class="text-box">
+                <h1>Stephen Koester ’19 Finds His Future in Tanzania</h1>
+              </div>
+            </div>
+          </a>
+          
+          <a href="/main/admissions/types-of-visits/">
+                              <div class="grid-item grid-item-sm red-bg admissions-cta">
+                            <div class="text-box">
+                <h3>We want to meet you!</h3>
+                <h2>Visit Muhlenberg</h2>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://apply.commonapp.org/Login?ma=173">
+                          	  <div class="grid-item grid-item-sm img-bg visit-cta" 
+                  	   style='background-image:url("/media/kdmedia/images/architecture-owl.jpg");'>
+                  <div class="gradient"></div>
+                            <div class="text-box">
+                <h2>Apply Now</h2>
+              </div>
+            </div>
+          </a>
+		  
+            <div class="grid-item grid-item-md red-bg alumni">
+              <div class="text-box">
+                <h2>Your Gift Opens Doors</h2>
+                <p>Muhlenberg College aspires to bring out our students’ full intellectual and personal potential.
+<br />
+<br />We can’t do it without you.</p>
+                <a href='/alumni/give'
+                   class="btn btn-outline">
+                  Make a gift to Muhlenberg.
+                </a>
+              </div>
+            </div>
+
+          <a href="/news/2018/readyatamomentsnoticeinsidethelife-savingoperationsofmuhlenbergems.html">
+            <div class="grid-item grid-item-md img-bg current-students"
+                  style='background-image:url("/media/contentassets/images/newscenter/campuslife/MCEMS-w1-460x245.jpg");'>
+              <div class="gradient"></div>
+              <div class="text-box">
+                <h2 class="regular">Ready at a Moment's Notice: Inside the Life-Saving Operations of Muhlenberg EMS</h2>
+              </div>
+            </div>
+          </a>
+
+          <div class="grid-item grid-item-md events-widget">
+              <!-- News -->
+              <div class="latest-news">
+                <div class="heading">
+                  <h2 class="pull-left">News</h2>
+                  <a class="pull-right" href="/news-and-events/">More News</a>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="latest-news-list">
+                  	<!-- navigation object : KDG HOME News - Top 3 Featured Keyword (2) -->
+                  	<!-- navigation object : KDG HOME All Latest News (2) --><!-- Content Template Start: News - Main-->
+<div class="latest-news-article">
+  <a href="/news/2018/stephenkoester19findshisfutureintanzania.html" class="bold">
+        Stephen Koester ’19 Finds His Future in Tanzania
+    </a><br/>
+	<div class="description">
+        In a study abroad semester, an athlete trains for his dream career.
+  	</div>
+</div>
+<script>
+  	(function() {
+    	var readMoreLink = new ReadMore($('.latest-news-article .description'), "/news/2018/stephenkoester19findshisfutureintanzania.html");
+        $(window).resize(function() {
+            readingMore = new ReadMore($('.latest-news-article .description'), "/news/2018/stephenkoester19findshisfutureintanzania.html");
+        });
+  	})();
+</script>
+<!-- Content Template End: News - Main--><!-- Content Template Start: News - Main-->
+<div class="latest-news-article">
+  <a href="/news/2018/holocaustprogramconfrontsmodernhatredinspiresserviceandhope.html" class="bold">
+        Holocaust Program Confronts Modern Hatred, Inspires Service and Hope
+    </a><br/>
+	<div class="description">
+        Middle school students learn powerful lessons at Youth and Prejudice Conference
+  	</div>
+</div>
+<script>
+  	(function() {
+    	var readMoreLink = new ReadMore($('.latest-news-article .description'), "/news/2018/holocaustprogramconfrontsmodernhatredinspiresserviceandhope.html");
+        $(window).resize(function() {
+            readingMore = new ReadMore($('.latest-news-article .description'), "/news/2018/holocaustprogramconfrontsmodernhatredinspiresserviceandhope.html");
+        });
+  	})();
+</script>
+<!-- Content Template End: News - Main--><!-- Content Template Start: News - Main-->
+<div class="latest-news-article">
+  <a href="/news/2018/muhlenbergvoicestudentswinbigatdistrictauditions.html" class="bold">
+        Muhlenberg Voice Students Win Big at District Auditions
+
+    </a><br/>
+	<div class="description">
+        The College claimed eight prize winners at this year's National Association of Teachers of Singing (NATS) auditions.
+  	</div>
+</div>
+<script>
+  	(function() {
+    	var readMoreLink = new ReadMore($('.latest-news-article .description'), "/news/2018/muhlenbergvoicestudentswinbigatdistrictauditions.html");
+        $(window).resize(function() {
+            readingMore = new ReadMore($('.latest-news-article .description'), "/news/2018/muhlenbergvoicestudentswinbigatdistrictauditions.html");
+        });
+  	})();
+</script>
+<!-- Content Template End: News - Main--><!-- Content Template Start: News - Main-->
+<div class="latest-news-article">
+  <a href="/news/2018/orthopedicsurgeonandhumanitariandrrobertdloeffler70todeliver2018muhlenbergcollegecommencementaddress.html" class="bold">
+        Orthopedic Surgeon and Humanitarian Dr. Robert D. Loeffler '70 to Deliver 2018 Muhlenberg College Commencement Address
+    </a><br/>
+	<div class="description">
+        Dr. Robert D. Loeffler '70 will serve as Commencement speaker and will receive an honorary doctorate. Additional honorary degree recipients include composer Morten Lauridsen, public policy advocate Heather C. McGhee, humanitarian Elissa Montanti and human rights activist, former mayor of Atlanta, GA and United Nations ambassador Andrew Young.
+  	</div>
+</div>
+<script>
+  	(function() {
+    	var readMoreLink = new ReadMore($('.latest-news-article .description'), "/news/2018/orthopedicsurgeonandhumanitariandrrobertdloeffler70todeliver2018muhlenbergcollegecommencementaddress.html");
+        $(window).resize(function() {
+            readingMore = new ReadMore($('.latest-news-article .description'), "/news/2018/orthopedicsurgeonandhumanitariandrrobertdloeffler70todeliver2018muhlenbergcollegecommencementaddress.html");
+        });
+  	})();
+</script>
+<!-- Content Template End: News - Main-->
+                </div>
+              </div>
+          </div>
+
+          <a href="/main/aboutus/virtual-tour/">
+            <div class="grid-item grid-item-sm gray-bg development-spotlight">
+              <div class="spotlight-image" 
+                   style='background-image:url("/media/kdmedia/images/2016_Fall-9.jpg");'>
+              </div>
+              <div class="text-box">
+                <h2>Tour the Campus</h2>
+                <p>Take the virtual tour to get a glimpse of the historic beauty on Muhlenberg's campus</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </a>
+
+          <div class="grid-item grid-item-sm red-bg twitter">
+            <div id="twitter-news" class="text-box">
+            </div>
+          </div>
+      </div><!--page content-->
+
+</div><!--/row-->
+
+<!--<script type="text/javascript" src="/media/kdmedia/js/twitterfetch.js"></script>-->
+
+<script type="text/javascript" src="/media/kdmedia/css/twitterfetch18.js"></script>
+
+<!--old twitter code kdg
+<script>
+  function handleResponse(tweet) {
+      $('#twitter-news').html(tweet);
+  	  var target = $('#twitter-news').find('img');
+      (!target.attr('src')) ? target.attr('src', target.attr('data-src-1x')) : null;
+  };
+  twitterFetcher.fetch('638706653345521665', '', 1, true, true, false, '', true, handleResponse, true);
+</script>-->
+<!--start kdg twitter feed fix 3/7/16-->
+<script>
+  $(function() {
+    function handleResponse(tweet) {
+        $('#twitter-news').html(tweet);
+        var target = $('#twitter-news').find('img');
+        (!target.attr('src')) ? target.attr('src', target.attr('data-src-1x')) : null;
+    };
+    var parameters = {
+          "id": '638706653345521665',
+          "maxTweets": 1,
+          "enableLinks": true,
+          "showUser": true,
+          "showTime": true,
+          "showImages": false,
+          "showRetweet": true,
+          "customCallback": handleResponse,
+          "showInteraction": true
+    };
+    twitterFetcher.fetch(parameters);
+  });
+</script>
+<!--end kdg twitter feed fix 3/7/16-->
+    <a kdg-scroll-to="body, html" kdg-scroll-to-dur="500" class="hidden-sm hidden-md hidden-lg">
+      <div class="back-to-top">
+        <h5><span class="fa fa-chevron-up"></span></h5>
+      </div>
+    </a>
+</div>
+  </div>
+
+</div><!--/container-->
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <a href="http://muhlenberg.edu"><img src="/media/kdmedia/images/footer-logo.png" alt="Muhlenberg College"></a>
+      </div>
+
+      <div class="footer-contact">
+         <p>2400 Chew St., Allentown, PA 18104-5586 | 484-664-3100 <br/>
+          &copy; Muhlenberg College <script type="text/javascript">var d = new Date();
+           document.write( d.getFullYear());</script> | <a target="_blank" href="http://muhlenberg.edu/main/aboutus/oit/about/policies_procedures/webprivacystatement/">Web Privacy Policy</a><br/>
+
+          <a href="http://www.muhlenberg.edu/media/contentassets/pdf/about/campus-safety/annual_report.pdf">Safety, Security and Fire Safety Annual Information Report 2017 </a> 
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--JS Goes Here-->
+  <script type="text/javascript" src="/media/kdmedia/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/media/kdmedia/js/kdg-ui.js"></script>
+  <script type="text/javascript" src="/media/kdmedia/js/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script>
+  var largeGrid = $('body, html').find('.grid-sizer');
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'masonry',
+    percentPosition: (largeGrid.length) ? true : false,
+    masonry: {
+  		columnWidth: (largeGrid.length) ? '.grid-sizer' : null
+    }
+  });
+</script>
+
+</body>
+
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WDV75R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDV75R');</script>
+<!-- End Google Tag Manager -->
+
+</html>

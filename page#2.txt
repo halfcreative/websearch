@@ -1,0 +1,894 @@
+URL:http://www.muhlenberg.edu/gateways/current-students/
+Number of Relative Links:76
+Number of Absolute Links:3
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+  <script type="text/javascript">
+    //Get or set target audience
+     var targetAudience ="";
+ </script>
+
+
+    <title>Student Hub</title>
+  
+ <style>
+   
+ /*mobile device view */
+@media (max-width:600px){
+#calendar-tabs {height:;}
+#targetAudience{visibility:hidden;}
+}
+ /*LANDSCAPE & WIDE:  height is set */
+@media (min-width:900px){
+#calendar-tabs {height:250px;}
+}
+/*mobile device view */
+@media (min-width:600px){
+#targetAudience{visibility:visible;}
+}
+
+   
+ 
+#calendar-tabs {
+border-bottom:0px!important;
+}
+   
+.title {
+ max-width:100%!important; 
+}
+  
+</style>
+
+  <div id="fb-root"></div>
+  
+  
+  <!-- for fb callouts -->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- end for fb callouts -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- cookies.js -->
+  <script type="text/javascript" src="/media/styleassets/js/cookies.js"></script>
+  
+  <!-- Animated Collapse -->
+  
+  <script type="text/javascript" src="/media/contentassets/js/it/animatedcollapse.js"></script>
+    <script type="text/javascript">
+
+/*Animated Collapsible DIV v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+var toggleStatus="hide";
+ function setToggle () {
+   if (this.toggleStatus == "hide") {
+     animatedcollapse.show('links-more');
+     //animatedcollapse.show('fb-more');
+     //animatedcollapse.hide('fb-less');
+     //animatedcollapse.hide('previewLinks');
+     var sml=document.getElementById('showMoreLess');
+     sml.innerHTML='(Show Less)'
+     this.toggleStatus="show";
+     document.getElementById('toggleArrow').src="images/upArrow.png";
+     return;
+   } 
+   if (this.toggleStatus == "show") {
+     animatedcollapse.hide('links-more');
+     //animatedcollapse.hide('fb-more');
+     //animatedcollapse.show('fb-less');
+     var sml=document.getElementById('showMoreLess');
+     sml.innerHTML='(Show More)'
+     //animatedcollapse.show('previewLinks');
+     this.toggleStatus="hide";
+     document.getElementById('toggleArrow').src="images/downArrow.png";
+   }
+ }
+animatedcollapse.addDiv('links-more', 'fade=0, hide=1');
+//animatedcollapse.addDiv('fb-more', 'fade=0, hide=1');
+//animatedcollapse.addDiv('fb-less', 'fade=0, hide=0');
+animatedcollapse.addDiv('alerts', 'fade=0, hide=0');
+animatedcollapse.addDiv('announce', 'fade=0, hide=1');
+animatedcollapse.addDiv('nod', 'fade=0, hide=0');
+animatedcollapse.addDiv('inthenews', 'fade=0, hide=0');
+animatedcollapse.addDiv('promos', 'fade=0, hide=0');
+animatedcollapse.addDiv('postings', 'fade=0, hide=0');
+animatedcollapse.addDiv('general', 'fade=0, hide=0');
+      
+//animatedcollapse.addDiv('previewLinks', 'fade=0, hide=0');
+
+animatedcollapse.ontoggle=function($, divobj, state){ //fires each time a DIV is expanded/contracted
+        //$: Access to jQuery
+        //divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+        //state: "block" or "none", depending on state
+}
+
+animatedcollapse.init();
+
+</script>
+<style>
+.toggle {
+font-family:arial;
+font-size:12px;
+color:#C42830;
+}
+.toggle a{
+text-decoration:none;
+color: #C42830;
+}
+.calToggle {
+font-family:arial;
+font-size:10px;
+color:#c42830;
+}
+.calToggle a{
+text-decoration:none;
+color:#c42830;
+}
+</style>
+<!-- end animated collapse -->
+    <!-- KDG Related files and additives -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/owl.transitions.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/kdg.css" />
+    
+    <link rel="icon" href="/media/kdmedia/images/favicon.ico">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/ie9-and-down.css" />
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+   <style>
+
+.events-widget{border:1px solid #d2d3d3; padding: 0px; background-color:white;}
+.events-widget .heading{background-color:#8a8a8a; padding:15px;}
+.events-widget .heading h2{color:white; float:left;}
+.events-widget .heading a{color:white; float:right; text-transform:uppercase; margin-top:12px; font-size:14px;}
+.events-widget ul li{padding-top:10px;}
+.events-widget ul a{display:block; padding-bottom:10px; border-bottom:1px solid #d2d3d3;}
+.events-widget ul a:last-child{border-bottom:0px; padding-bottom:5px;}
+.events-widget ul li .date h3{font-size:16px; text-align:center; color:#a51d36;}
+.events-widget ul li .event-details{border-left:1px solid #d2d3d3;}
+.events-widget ul li .event-details p{font-family:Normal500;}
+
+.events-widget ul.event-list{overflow-y:auto; max-height: 373px;}
+.events-widget ::-webkit-scrollbar{width: 5px;}
+.events-widget ::-webkit-scrollbar-track{background-color: transparent;}
+.events-widget ::-webkit-scrollbar-thumb{background-color: #d2d3d3;}
+.events-widget ::-webkit-scrollbar-thumb:hover{background-color: #8a8a8a;}
+</style> 
+</head>
+
+<body>
+  <noscript>
+    <div class="noscript-modal">
+      <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+      <div class="noscript-overlay"></div>
+      <div class="modal">
+        <h3 class="red">Whoops! Please enable Javascript</h3>
+        <h4>We've worked hard to update this site with the latest technology. To ensure that you are getting the best experience, please enable Javascript in your browser's settings. Thank you!</h4>
+        <label class="button red" for="modal-closing-trick">
+          Close
+        </label>
+       </div>
+     </div>
+  </noscript>
+  
+  <div class="modal old-browser">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Sorry, but your browser is out of date.</h4>
+        </div>
+        <div class="modal-body">
+          <h4>This website was developed using the latest technology available, and therefore requires a newer, safer browser than the one you are currently running. Use the links below to download the most up to date version of your browser and try again!</h4>
+          <a class="browser-block" href="http://www.google.com/chrome" target="_blank">
+            <img src="/media/kdmedia/images/chrome.png" alt="Chrome" />
+          </a><!--
+          --><a class="browser-block" href="http://www.mozilla.org/firefox/new/" target="_blank">
+          	<img src="/media/kdmedia/images/firefox.png" alt="Firefox" />
+          </a><!--
+          --><a class="browser-block" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">
+          	<img src="/media/kdmedia/images/internet-explorer.png" alt="Internet Explorer" />
+          </a><!--
+          --><a class="browser-block" href="http://support.apple.com/downloads/#safari" target="_blank">
+          	<img src="/media/kdmedia/images/safari.png" alt="Safari" />
+          </a><!--
+          --><a class="browser-block" href="http://www.opera.com/download" target="_blank">
+          	<img src="/media/kdmedia/images/opera.png" alt="Opera" />
+          </a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    <div class="modal-backdrop fade in"></div>
+  </div><!-- /.modal -->
+  
+  <!-- navigation object : Tool I Am Links --><div class="collapse" id="iam-navigation">
+	<ul>
+        <li>
+          	<a href="/main/admissions"
+               style='background-image:url("/media/kdmedia/images/iamphotos/prospective-link.jpg");'>
+              	Prospective Student
+          	</a>
+      	</li>
+        <li>
+      		<a href="/incoming/"
+               style='background-image:url("/media/kdmedia/images/iamphotos/incoming-link.jpg");'>
+              	Incoming Student
+          	</a>	
+      	</li>
+        <li>
+      		<a href="/gateways/current-students/"
+               style='background-image:url("/media/kdmedia/images/iamphotos/current-link.jpg");'>
+              	Current Student
+          	</a>
+      	</li>
+        <li>
+      		<a href="/gateways/faculty-staff"
+               style='background-image:url("/media/kdmedia/images/iamphotos/faculty-link.jpg");'>
+              	Faculty & Staff
+          	</a>
+      	</li>
+        <li>
+      		<a href="/gateways/parents"
+               style='background-image:url("/media/kdmedia/images/iamphotos/parents-link.jpg");'>
+              	Parent
+          	</a>
+      	</li>
+      	<li>
+          	<a href="/alumni"
+               style='background-image:url("/media/kdmedia/images/iamphotos/alumni-link.jpg");'>
+              	Alumni
+          	</a>
+      	</li>
+  	</ul>
+    <div class="clearfix"></div>
+</div><div class="collapse" id="tool-navigation">
+	<ul>
+        <li>
+          	<a href="/contact">
+              	Contact
+          	</a>
+      	</li>
+        <li>
+      		<a href="/main/aboutus/campus-map/">
+              	Campus Map
+          	</a>	
+      	</li>
+        <li>
+      		<a href="/tactical/azfind.htm">
+              	A-Z Index
+          	</a>
+      	</li>
+        <li>
+      		<a href="/directory">
+              	Directory
+          	</a>
+      	</li>
+        <li>
+      		<a href="http://trexler.muhlenberg.edu/">
+              	Library
+          	</a>
+      	</li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+
+  <nav class="navbar" id="top">
+      <div class="container">
+          <div class="row">
+  		  	  <div class="expand-buttons">
+  				<ul>
+            		<a href="/alumni/give"><li class="give-btn hidden-xs">
+  						Give
+  					</li></a>
+            		<a data-toggle="collapse" data-bootstrap-collapse-help="1" href="#tool-navigation" aria-expanded="false" aria-controls="tool-navigation" class="tool-link collapsed"><li class="tool-button">
+  						Tools <span class="fa fa-caret-down"></span>
+  					</li></a>
+  					<a data-toggle="collapse" data-bootstrap-collapse-help="1" href="#iam-navigation" aria-expanded="false" aria-controls="iam-navigation" class="iam-link collapsed"><li class="iam-button">
+  						I am <span class="fa fa-caret-down"></span>
+  					</li></a>
+            		<div class="clearfix"></div>
+  				</ul>
+  			</div><!--/expand-buttons-->
+  			<div class="col-xs-12 col-sm-6">
+              <a href="/"><img src="/media/kdmedia/images/header-logo.png"></a>
+  				<a data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav" class="mobile-menu hidden-lg hidden-md hidden-sm"><span class="fa fa-bars"></span></a>
+  			</div>
+  			<div class="col-xs-12 col-sm-6 hidden-xs">
+          		<div class="header-right">
+  					<div class="search ">
+                      <form action="/search/results.html" method="get" name="SearchForm" id="SearchForm">
+  							
+                			<input name="q" type="text" size="0" id="q" value="" placeholder="search">
+                			<button type="Submit" class="btn btn-search"><span class="fa fa-search"></span></button>
+  						</form>
+              			<a target="_child" href="http://twitter.com/muhlenberg"><span class="fa fa-twitter"></span></a>
+              			<a target="_child" href="http://www.facebook.com/MuhlenbergCollege"><span class="fa fa-facebook"></span></a>
+  					</div>
+  				</div>
+  			</div>
+  		</div><!--row-->
+    </div>
+    <div class="inner-nav hidden-xs">
+      <div class="container">
+      	  <div class="row">
+        	  <div class="nav-holder">
+    			  <a name="navigation" style="display:none"></a>
+    			  <div class="nav">
+                      <!-- navigation object : Main Menu KD --><ul><li><a href="/main/aboutus/">About Us</a></li><li><a href="/main/admissions/">Admissions</a></li><li><a href="/academics/">Academics</a></li><li><a href="/student-life/">Student Life</a></li><li><a href="http://muhlenbergsports.com/" target="_blank">Athletics</a></li><li><a href="/news-and-events/index.php">News &amp; Events</a></li><li><a href="/main/wescoe/">Adult Learning</a></li></ul>
+    			  </div>
+    		  </div>
+          </div><!--row-->
+        </div>
+    </div>
+  </nav>
+
+  <div id="mobile-nav" class="collapse hidden-sm hidden-md hidden-lg">
+    <div class="search ">
+      <form action="/search/results.html" method="get" name="SearchForm" id="SearchForm">
+               <input name="q" type="text" size="0" id="q" value="" placeholder="search">
+        <button type="Submit" class="btn btn-search"><span class="fa fa-search"></span></button>
+      </form>
+    </div>
+        
+    <!-- navigation object : Main Menu KD --><ul><li><a href="/main/aboutus/">About Us</a></li><li><a href="/main/admissions/">Admissions</a></li><li><a href="/academics/">Academics</a></li><li><a href="/student-life/">Student Life</a></li><li><a href="http://muhlenbergsports.com/" target="_blank">Athletics</a></li><li><a href="/news-and-events/index.php">News &amp; Events</a></li><li><a href="/main/wescoe/">Adult Learning</a></li></ul>
+        
+    <a target="_child" href="http://www.facebook.com/MuhlenbergCollege"><span class="fa fa-facebook"></span></a>
+    <a target="_child" href="http://twitter.com/muhlenberg"><span class="fa fa-twitter"></span></a>
+    <a href="/alumni/give" class="btn primary-btn">Give</a>
+  </div>
+
+  <div class="container">
+    <div class="row mobile-row">
+      
+      <!--<div class="col-sm-6 col-md-9 col-lg-9 col-xs-12" > -->
+      <div   class="col-sm-6 col-md-8 col-lg-8 col-xs-12" >
+
+
+
+       
+      
+   <style>
+  p a{color:white; text-decoration:underline}
+</style>
+<div class="page-header" style='background-image:url("/media/contentassets/images/campusbanners/StudentGateway-background-gradient.jpg"); margin-bottom:0px'>
+    <h1>
+      Student Hub
+  
+  
+  </h1>
+	       <p></p>
+      <p><strong>Get mobile<span>&nbsp;</span></strong>Download&nbsp;the<strong><span>&nbsp;</span><a href="http://www.muhlenberg.edu/main/aboutus/mobileapp/">iMuhlenberg App</a></strong></p>
+<p><strong>Athletics Onscreen</strong><span>&nbsp;</span>See<span>&nbsp;</span><a href="http://www.youtube.com/user/muhlsid">our teams on YouTube</a></p>
+<p><strong>Library News</strong><span>&nbsp;</span>Get the latest<span>&nbsp;</span><a href="http://library.blogs.muhlenberg.edu/">library news &amp; services</a></p>
+<p><strong>Read</strong><span>&nbsp;</span>Catch up at<span>&nbsp;</span><a href="http://www.muhlenbergweekly.com/">Muhlenberg Weekly</a></p>
+<p><strong>Listen</strong><span>&nbsp;</span>Hear the latest on<span>&nbsp;</span><a href="http://www.muhlenberg.edu/wmuh">91.7 WMUH</a></p>
+<p>&nbsp;</p>
+  
+</div>
+<!-- moved
+<div class="cta-section hidden-sm hidden-md hidden-lg" data-sidebar-buttons-target>
+</div>
+-->
+
+<div id="targetAudience" style='text-align:right;padding-bottom:15px'>
+<span style='font-size:0.7em'>
+<a href='/gateways/setCookie.php?target=target&audience=student'>Make this my Message Board &quot;start&quot; page</a>
+</span>
+</div>
+  <script>
+   var target =this.targetAudience;
+   if (target == 'student' || '' == 'student') {
+        document.getElementById('targetAudience').style.visibility="hidden";
+   }
+</script>
+<!-- Content Template Start: Expandable Columns-3 -->
+
+<div class="row" style='background-color:#333333;padding-bottom:0px;margin: 0 0 10px 0;margin-bottom:-10px'>
+
+<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12" >
+ <h3 style='color:#FFFFFF'>Commonly Used Campus Web Pages &nbsp;&nbsp; 
+<span style='font-size:0.8em;font-weight:normal'><a id="showMoreLess" href="javascript: setToggle()" style='font-size:0.8em;color:#FFFFFF'  >(Show More)</a></span>
+
+</div>
+</div>
+
+<div id="container">
+<div id="previewLinks" class="row" >
+
+<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4">
+ <p><strong>Get Academic</strong></p>
+<ul>
+<li><a href="/main/newsevents/calendar">Academic Calendar</a></li>
+<li><a href="https://capstone2.muhlenberg.edu/frmss03.html">Course Schedule</a></li>
+<li><a href="/main/aboutus/registrar/exam_schedule.html/">Final Exam Schedule</a></li>
+<li><a href="/main/wescoe/programcourseofferings/summer.html">Summer Study</a></li>
+</ul>
+</div>
+
+<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4">
+<p><strong>Get Services</strong></p>
+<ul>
+<li><a href="/main/aboutus/collegeoffices.html">College Offices</a></li>
+<li><a href="/main/campuslife/resserv/">Housing/Residential Life</a></li>
+<li><span style="color: #0000ee;"><span style="text-decoration: underline;"><a href="/main/aboutus/deanst/shuttleservice/">Shuttle Service</a></span></span></li>
+</ul>
+</div>
+<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4">
+<p><strong>Get Involved</strong></p>
+<ul>
+<li><a href="/main/aboutus/careercenter/">Career Center</a></li>
+<li><a href="/main/campuslife/activities/studentorganizations/listoforganizations/">Student&nbsp;Organizations</a></li>
+<li><a href="http://webapps.muhlenberg.edu/StudentTools">Student Tools Login</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Toggle links -->
+<!-- Expanded Columns -->
+<div id="links-more" class="row" >
+<hr/>
+<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4">
+ <ul style="line-height: 1.4;">
+<li><a href="https://webapps.muhlenberg.edu:442/internships/index.php" target="_blank">ABE Internship</a></li>
+<li><a href="/main/aboutus/dean-academic/integrity/">Academic Integrity Code</a></li>
+<li><a href="/main/admissions/applyingtoacooperativeprogram/">Cooperative Program</a></li>
+<li><a href="http://catalog.muhlenberg.edu/">Academic Catalog</a></li>
+<li><a href="/main/aboutus/arc/">Academic Resource Center</a></li>
+<li><a href="/main/aboutus/dean-academic/awards/">Awards &amp; Grants</a></li>
+<li><a href="/commencement/">Commencement</a></li>
+<li><a href="/main/aboutus/registrar/courses/lviaccross-registration/">Connect with Other Colleges</a></li>
+<li><a href="/main/newsevents/calendar/">Academic Calendar</a></li>
+<li><a href="/main/aboutus/dean-academic/">Dean of Academic Life</a></li>
+<li><a href="/main/academics/global-education/">Education Abroad</a></li>
+<li><a href="/main/academics/majorsandprograms.html">Majors, Minors &amp; Programs</a></li>
+<li><a href="/main/aboutus/dean-academic/awards/nationalandinternational/informationaboutawards/">Prestigious Awards Initiative</a></li>
+<li><a href="/main/aboutus/registrar/policyandprocedures/">Policies &amp; Procedures Manual</a></li>
+<li><a href="/main/academics/research/">Research</a></li>
+<li><a href="/main/campuslife/community-engagement/">Service Learning</a></li>
+<li><a href="http://trexler.muhlenberg.edu/">Trexler Library</a></li>
+<li><a href="/main/academics/global-education/approvedprogramsoff-campus/washingtonsemester/">Washington Semester</a><br><br></li>
+</ul>
+</div>
+<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4">
+<ul>
+<li><a href="http://bergbookshop.com/home.aspx">'Berg Bookshop</a></li>
+<li><a href="/main/aboutus/campus-safety/">Campus Safety</a></li>
+<li><a href="https://capstone2.muhlenberg.edu/frmss01.html">CapStone Student Information System</a></li>
+<li><a href="/main/aboutus/careercenter/">Career Center</a></li>
+<li><a href="/main/aboutus/collegeoffices.html">College Offices</a></li>
+<li><a href="/main/aboutus/counseling/">Counseling Services</a></li>
+<li><a href="/main/aboutus/deanst/">Dean of Students</a></li>
+<li><a href="http://dining.muhlenberg.edu/">Dining Services</a></li>
+<li><a href="/main/aboutus/disabilities/">Disability Services</a></li>
+<li><a href="/main/aboutus/finaid/">Financial Aid</a></li>
+<li><a href="/main/aboutus/health/">Health Center</a></li>
+<li><a href="/main/aboutus/oit/">Information Technology</a></li>
+<li><a href="/main/aboutus/deanst/summaryofoffices/judicialaffairs/">Judicial Affairs</a></li>
+<li><a href="/main/aboutus/oit/studentcomputing/laptopsecurity/">Laptop Security</a></li>
+<li><a href="/main/campuslife/lgbt/">LGBT</a></li>
+<li><a href="http://muhlenbergsports.com/sports/2014/12/12/LSC.aspx?path=facilities_">Life Sports Center</a></li>
+<li><a href="/campusonly/collegegraphics/">Official College Graphics</a></li>
+<li><a href="/main/aboutus/plantops/">Plant Operations</a>
+<ul>
+<li><a href="/main/aboutus/plantops/workorderoncampus/">Submit Work Order</a></li>
+</ul>
+</li>
+<li><a href="/campusonly/policiesprocedures/">Policies &amp; Procedures</a></li>
+<li><a href="/main/aboutus/president/">President's Office</a></li>
+<li><a href="/main/aboutus/registrar/">Registrar</a></li>
+<li><a href="/main/campuslife/resserv/">Residential Services</a></li>
+<li><a href="/main/aboutus/deanst/shuttleservice/">Shuttle Service</a></li>
+<li><a title="Home &raquo; Muhlenberg College &raquo; About Us &raquo; Information Technology &raquo; Student Computing" href="/main/aboutus/oit/studentcomputing/">Student Computing</a>&nbsp;(Help Desk, X3375)</li>
+<li><a href="/main/aboutus/deanst/services/student_guide.html">Student Policy and Resource Guide</a></li>
+<li><a href="/media/contentassets/pdf/about/deanst/studentguide/socialcode.pdf">Social Code</a></li>
+<li><a href="/main/aboutus/union/">Student Union</a></li>
+<li><a href="/main/aboutus/hr/weather.html">Weather Policy</a></li>
+<li><a href="/main/academics/writing/center/">Writing Center</a></li>
+</ul>
+<p><br><br></p>
+</div>
+<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4">
+ <ul>
+<li><a href="http://www.muhlenbergconnect.com/">Alumni Relations</a></li>
+<li><a href="http://muhlenbergsports.com/">Athletics</a></li>
+<li><a href="/main/campuslife/sustainability/">Campus Sustainability</a></li>
+<li><a href="/main/campuslife/community-engagement/">Community Service</a></li>
+<li><a href="/family-weekend/">Family Weekend</a></li>
+<li><a href="/main/campuslife/greek/">Greek Life</a></li>
+<li><a href="/main/aboutus/gallery/">Martin Art Gallery</a></li>
+<li><a href="/main/campuslife/activities/activitiescouncilmac/">Muhlenberg Activities Council</a></li>
+<li><a href="/main/campuslife/multicultural/">Multicultural Life</a></li>
+<li><a href="/main/academics/theatre-dance/">Performing Arts</a></li>
+<li><a href="/main/campuslife/religiouslife/">Religious Life</a></li>
+<li><a href="/strategicplan/">Strategic Planning</a></li>
+<li><a href="/studorgs/council/">Student Government Association</a></li>
+<li><a href="/main/campuslife/activities/studentorganizations/">Student Organizations</a></li>
+</ul>
+<p><br><br></p>
+</div>
+</div>
+</div>
+
+<!-- end -->	
+<!-- moved -->
+<div class="cta-section hidden-sm hidden-md hidden-lg" data-sidebar-buttons-target>
+</div>
+<!-- moved -->
+</div>
+<!-- top 5 buttons -->
+<div class="col-sm-6  col-md-4 col-lg-4 col-xs-12"  style="vertical-align:middle">  
+             <div  class='btn primary-btn'>       
+              <a href="https://capstone2.muhlenberg.edu/frmss01.html">Capstone</a>
+         </div>
+        		  <div class='btn secondary-btn'>
+                  <a href="https://muhlenberg-college.onelogin.com/login">Canvas</a>
+              </div>
+        		  <div class='btn tertiary-btn'>
+                  <a href="https://muhlenberg-college.onelogin.com/login">Student Portal Log-in</a>
+              </div>
+        		  <div  class='btn primary-btn'>
+                  <a href="/webapps/incidentreporting/">Report an Incident</a>
+                
+              </div>
+
+  
+ 
+
+
+
+
+
+<!-- Today and Upcoming class="col-sm-6 col-md-4" -->
+
+
+
+<div id="calendar-tabs" class="events-widget" style="padding-top:20px;border-top:thin solid #868079" >
+            <div class="news-and-arts">
+              <h2 class="pull-left">Events</h2>
+              <a class="pull-right" href="http://finaid.muhlenberg.edu/Calendar/">Full Calendar</a>
+              <div class="clearfix"></div>
+              <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#oncampus" id="on-campus" aria-controls="oncampus" role="tab" data-toggle="tab" aria-expanded="true">Happening Today</a></li>
+                  <li role="presentation"><a href="#arts" id="arts-culture" aria-controls="arts" role="tab" data-toggle="tab">Upcoming</a></li>
+              </ul>
+              <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="oncampus" aria-labelledBy="on-campus">
+                  <!-- Tab 1 Content:  Happening Today -->
+                      <ul class="event-list">
+                         
+
+<a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30209&information_id=88726&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold"> 8:30 AM</h3></div><div class="col-xs-9  event-details"><p class="details">Wescoe School - Current &amp; New Student Advising - Saturday<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30390&information_id=89498&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">10:00 AM</h3></div><div class="col-xs-9  event-details"><p class="details">Track and Field hosts Muhlenberg Invitational<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30319&information_id=89354&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">12:00 PM</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Tennis at Johns Hopkins<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30382&information_id=89482&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">12:00 PM</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Tennis at Johns Hopkins<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30369&information_id=89454&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold"> 1:00 PM</h3></div><div class="col-xs-9  event-details"><p class="details">Softball vs. Franklin &amp; Marshall<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30170&information_id=88475&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold"> 6:00 PM</h3></div><div class="col-xs-9  event-details"><p class="details">HINES SENIOR RECITAL<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30504&information_id=90129&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold"> 6:00 PM</h3></div><div class="col-xs-9  event-details"><p class="details">Sex Positivity Fair<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=29911&information_id=87866&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold"> 8:00 PM</h3></div><div class="col-xs-9  event-details"><p class="details">GLORY<br/></p></div><div class="clearfix"></div></li></a><a href="http://finaid.muhlenberg.edu/Calendar"><li><div class="col-xs-3 date"><h3 class="bold">Today</h3></div><div class="col-xs-9  event-details"><p class="details">For tours, info sessions and dining see full Calendar<br/><span class="gray time"></span></p></div><div class="clearfix"></div></li></a>                      </ul>
+                  </div>
+                  <div role="tabpane1" class="tab-pane fade" id="arts" aria-labelledBy="arts-culture">
+                      <!-- Tab 2 Content:  Upcoming -->
+                    <ul class="event-list">
+                        
+
+<a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30494&information_id=90105&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">Barnes Foundation Field Trip<br/><span class="gray time">11:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30288&information_id=89292&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball at Johns Hopkins (doubleheader)<br/><span class="gray time">12:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30495&information_id=90107&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">Softball at Misericordia<br/><span class="gray time"> 1:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=29911&information_id=87867&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">GLORY<br/><span class="gray time"> 2:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30171&information_id=88477&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">LESTER SENIOR RECITAL<br/><span class="gray time"> 2:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30246&information_id=89001&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">Chapel Worship Service<br/><span class="gray time"> 5:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30247&information_id=89015&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">Chapel Dinner<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30516&information_id=90161&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">An Evening with ELLEN McLAUGHLIN<br/><span class="gray time"> 8:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30466&information_id=89990&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">Zumba<br/><span class="gray time"> 8:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30249&information_id=89031&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>8</h3></div><div class="col-xs-9  event-details"><p class="details">Catholic Mass<br/><span class="gray time"> 9:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30252&information_id=89082&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>9</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 6:15 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30511&information_id=90147&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Music in Gideon F. Egner Memorial Chapel<br/><span class="gray time"> 2:10 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30265&information_id=89222&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time"> 7:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30253&information_id=89110&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 9:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30263&information_id=89182&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time">12:10 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30289&information_id=89294&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball vs. Swarthmore<br/><span class="gray time"> 3:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30320&information_id=89356&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Tennis vs. Moravian<br/><span class="gray time"> 4:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30383&information_id=89484&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Tennis at Bryn Mawr<br/><span class="gray time"> 4:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30510&information_id=90145&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Senior Honors Thesis Presentation<br/><span class="gray time"> 5:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30254&information_id=89139&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 5:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30406&information_id=89737&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Return of the Repressed: Lecture on Italian Film and Holocaust Memory<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30172&information_id=88483&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">CONTEMPORARY MUSIC FESTIVAL<br/><span class="gray time"> 7:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30500&information_id=90119&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>10</h3></div><div class="col-xs-9  event-details"><p class="details">Dr. Douglas Ovens &quot;Farewell&quot; Concert<br/><span class="gray time"> 7:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30265&information_id=89223&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>11</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time"> 7:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30254&information_id=89140&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>11</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 5:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30341&information_id=90157&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>11</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Lacrosse at Washington College<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30310&information_id=89336&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>11</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Lacrosse vs. Swarthmore<br/><span class="gray time"> 7:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30265&information_id=89224&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time"> 7:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30253&information_id=89111&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 9:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30465&information_id=89982&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Low impact cardio/tone<br/><span class="gray time">12:10 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30507&information_id=90135&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Golf hosts Muhlenberg Invitational<br/><span class="gray time"> 1:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30370&information_id=89456&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Softball vs. Moravian<br/><span class="gray time"> 3:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30327&information_id=89370&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Ninth Annual Innovation Challenge<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30252&information_id=89083&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 6:15 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30499&information_id=90117&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Writers at Muhlenberg Present Sarah Blake<br/><span class="gray time"> 7:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30208&information_id=88679&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>12</h3></div><div class="col-xs-9  event-details"><p class="details">Wescoe School - Current &amp; New Student Advising - Friday<br/><span class="gray time"> 8:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30208&information_id=88627&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>13</h3></div><div class="col-xs-9  event-details"><p class="details">Wescoe School - Current &amp; New Student Advising - Friday<br/><span class="gray time"> 8:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30391&information_id=89500&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>13</h3></div><div class="col-xs-9  event-details"><p class="details">Track and Field at Bison Outdoor Classic<br/><span class="gray time">10:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30263&information_id=89183&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>13</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time">12:10 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30514&information_id=90153&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>13</h3></div><div class="col-xs-9  event-details"><p class="details">Muhlenberg College UN Lecture Series<br/><span class="gray time"> 2:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30290&information_id=89296&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>13</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball at Swarthmore<br/><span class="gray time"> 3:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30173&information_id=88487&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>13</h3></div><div class="col-xs-9  event-details"><p class="details">OPERA WORKSHOP PERFORMANCE<br/><span class="gray time"> 7:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30209&information_id=88727&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Wescoe School - Current &amp; New Student Advising - Saturday<br/><span class="gray time"> 8:30 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30392&information_id=89502&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Track and Field at Coach P Invitational<br/><span class="gray time">10:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30321&information_id=89358&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Tennis vs. Gettysburg<br/><span class="gray time">12:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30384&information_id=89486&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Tennis vs. Gettysburg<br/><span class="gray time">12:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30291&information_id=89298&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball vs. McDaniel (doubleheader)<br/><span class="gray time">12:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30311&information_id=89338&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Lacrosse vs. McDaniel<br/><span class="gray time"> 1:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30371&information_id=89458&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Softball at McDaniel<br/><span class="gray time"> 1:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30174&information_id=88490&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">FLUTE ENSEMBLE CONCERT<br/><span class="gray time"> 2:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30342&information_id=89400&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Lacrosse vs. McDaniel<br/><span class="gray time"> 4:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30173&information_id=88488&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>14</h3></div><div class="col-xs-9  event-details"><p class="details">OPERA WORKSHOP PERFORMANCE<br/><span class="gray time"> 7:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30246&information_id=89002&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>15</h3></div><div class="col-xs-9  event-details"><p class="details">Chapel Worship Service<br/><span class="gray time"> 5:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30247&information_id=89016&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>15</h3></div><div class="col-xs-9  event-details"><p class="details">Chapel Dinner<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30176&information_id=88494&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>15</h3></div><div class="col-xs-9  event-details"><p class="details">CONNER SENIOR RECITAL<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30466&information_id=89991&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>15</h3></div><div class="col-xs-9  event-details"><p class="details">Zumba<br/><span class="gray time"> 8:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30249&information_id=89032&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>15</h3></div><div class="col-xs-9  event-details"><p class="details">Catholic Mass<br/><span class="gray time"> 9:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30252&information_id=89084&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>16</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 6:15 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30265&information_id=89225&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time"> 7:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30253&information_id=89112&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 9:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30263&information_id=89184&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time">12:10 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30292&information_id=89300&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball vs. Haverford<br/><span class="gray time"> 3:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30372&information_id=89460&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">Softball at Dickinson<br/><span class="gray time"> 5:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30254&information_id=89141&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 5:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30309&information_id=90155&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Lacrosse at Washington College<br/><span class="gray time"> 7:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30177&information_id=88496&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>17</h3></div><div class="col-xs-9  event-details"><p class="details">CONTEMPORARY MUSIC FESTIVAL<br/><span class="gray time"> 7:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30265&information_id=89226&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>18</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time"> 7:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30293&information_id=89302&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>18</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball at Elizabethtown<br/><span class="gray time"> 4:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30254&information_id=89142&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>18</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 5:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30343&information_id=89402&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>18</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Lacrosse vs. Swarthmore<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=29912&information_id=87869&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>18</h3></div><div class="col-xs-9  event-details"><p class="details">DANCE EMERGE<br/><span class="gray time"> 8:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30393&information_id=89504&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">Track and Field at Mondschein Multi<br/><span class="gray time">12:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30265&information_id=89227&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time"> 7:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30253&information_id=89113&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 9:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30465&information_id=89983&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">Low impact cardio/tone<br/><span class="gray time">12:10 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30373&information_id=89462&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">Softball vs. Albright<br/><span class="gray time"> 3:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30252&information_id=89085&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">Indoor Cycling Class<br/><span class="gray time"> 6:15 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=29912&information_id=87870&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">DANCE EMERGE<br/><span class="gray time"> 8:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30208&information_id=88680&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>19</h3></div><div class="col-xs-9  event-details"><p class="details">Wescoe School - Current &amp; New Student Advising - Friday<br/><span class="gray time"> 8:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30394&information_id=89506&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">Track and Field at Mondschein Multi<br/><span class="gray time">12:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30208&information_id=88628&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">Wescoe School - Current &amp; New Student Advising - Friday<br/><span class="gray time"> 8:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30395&information_id=89508&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">Track and Field at Larry Ellis Invitational<br/><span class="gray time">10:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30263&information_id=89185&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">MC Body Taut<br/><span class="gray time">12:10 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30178&information_id=88498&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">5th STUDENT RECITAL<br/><span class="gray time"> 2:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30294&information_id=89304&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball at Haverford<br/><span class="gray time"> 3:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30385&information_id=89488&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Tennis at Swarthmore<br/><span class="gray time"> 4:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30179&information_id=88500&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">CHAMBER SINGERS &amp; WOMEN'S ENSEMBLE OPEN DRESS REHEARSAL<br/><span class="gray time"> 6:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=29912&information_id=87871&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>20</h3></div><div class="col-xs-9  event-details"><p class="details">DANCE EMERGE<br/><span class="gray time"> 8:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30330&information_id=89376&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Volunteer Summit<br/><span class="gray time">12:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30366&information_id=89448&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Volunteer Summit 2018<br/><span class="gray time"> 8:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30436&information_id=89853&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Volunteer Summit 2018<br/><span class="gray time"> 8:15 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30209&information_id=88728&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Wescoe School - Current &amp; New Student Advising - Saturday<br/><span class="gray time"> 8:30 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30396&information_id=89510&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Track and Field at Greyhound Invitational<br/><span class="gray time">10:00 AM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30344&information_id=89404&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Women's Lacrosse at Dickinson<br/><span class="gray time">12:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30295&information_id=89306&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Baseball vs. Washington College (doubleheader)<br/><span class="gray time">12:30 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30375&information_id=89468&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Softball at Swarthmore<br/><span class="gray time"> 1:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=29912&information_id=87872&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">DANCE EMERGE<br/><span class="gray time"> 2:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30323&information_id=89362&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Tennis at Wilkes<br/><span class="gray time"> 2:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30312&information_id=89340&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">Men's Lacrosse at Dickinson<br/><span class="gray time"> 3:00 PM</span></p></div><div class="clearfix"></div></li></a><a href="http://webapps.muhlenberg.edu/Calendar/EventList.aspx?view=EventDetails&eventidn=30180&information_id=88502&type=&syndicate=syndicate"><li><div class="col-xs-3 date"><h3 class="bold">Apr<br/>21</h3></div><div class="col-xs-9  event-details"><p class="details">CHAMBER SINGERS &amp; WOMEN'S ENSEMBLE CONCERT<br/><span class="gray time"> 4:00 PM</span></p></div><div class="clearfix"></div></li></a>                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+<!-- end test insert -->	
+</div>
+</div>
+<div class="row mobile-row">
+<div class="col-sm-6 col-md-8 col-lg-8 col-xs-12" >
+<!-- Messages -->
+<div class="row"  style="padding-top:2px"  >
+<div >
+
+<!-- -->
+
+ <div class="accordion" >
+
+<!-- Static Item -->
+    <div class="item"  style='padding-bottom:0px;margin: 0 0 10px 0;'>
+      <div class="title" style='background-color:#A41D36;text-align:center;font-size:18px;line-height:35px;height:35px;color:#FFFFFF;margin-left:15px;width:730px'>Message Board</div>
+    </div>
+</div>
+
+
+<!-- inthenews message -->
+<!-- do not show postings if client is not local -->
+ 
+ 
+ <!-- show no matter what -->
+ 
+ <div class="row mobile-row" style='height:20px;color:#A41D36;background-color:#A8A8A8;font-weight:bold;margin-left:15px;max-width:730px;padding-left:5px'>
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' style="padding-left:5px"  > 
+<div  >In The Media
+<span class="toggle">
+&nbsp;&nbsp;<a style="color:#A41D36" href="javascript:animatedcollapse.show('inthenews');remember('inthenews','show')">
+(Open</a>
+<a  style="color:#A41D36" href="javascript:animatedcollapse.hide('inthenews');remember('inthenews','hide')">
+&nbsp;&#8226;&nbsp;Close)
+</a></span>
+</div> </div>
+</div>
+
+<div class="row mobile-row">
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' >
+
+
+<!-- display on load? -->
+<script type="text/javascript">
+animatedcollapse.addDiv('inthenews', 'fade=0', 'hide=0');
+</script>
+<div id='inthenews' >
+
+<h3>Easton Express-Times</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> Call on Pa. lawmakers to ban gay conversion therapy: Opinion piece by Morgan Wolper and David Berg, both class of '19.  <a  style='color:#A41D36' href='http://www.lehighvalleylive.com/opinion/index.ssf/2018/04/_opinion_4.html'>Read More</a></p><h3>Muhlenberg Web Sports</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> Sophomore Brenden Weiss knocked a game-winning single up the middle and Matthew D'Ambrosia tossed a gem on the mound in Muhlenberg baseball's 1-0 win over Dickinson.  <a  style='color:#A41D36' href='http://muhlenbergsports.com/news/2018/4/5/baseball-wins-on-walkoff-single.aspx?path=baseball'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> Timely hits by batters in three big innings and clutch outs by pitchers in both games added up to a doubleheader sweep by the Muhlenberg softball team at Ursinus.  <a  style='color:#A41D36' href='http://muhlenbergsports.com/news/2018/4/5/softball-sweeps-ursinus.aspx?path=softball'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> A strong showing from the first singles and doubles highlighted Muhlenberg men's tennis' match against regionally ranked TCNJ.  <a  style='color:#A41D36' href='http://muhlenbergsports.com/news/2018/4/6/mens-tennis-faces-ranked-opponent.aspx?path=mten'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> The baseball team came close to its second bases-loaded, ninth-inning go-ahead hit in the last 24 hours, but a fine defensive play sealed a 5-4 win for Dickinson.  <a  style='color:#A41D36' href='http://muhlenbergsports.com/news/2018/4/6/baseball-robbed-on-final-play.aspx?path=baseball'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> WHY D3? As part of the celebration of NCAA Division III Week, Muhlenberg student-athletes told us why they chose Division III and what they like best about it.  <a  style='color:#A41D36' href='http://muhlenbergsports.com/news/2018/4/6/general-why-d3.aspx?path=baseball'>Read More</a></p><h3>Other News</h3><span class='otherNews'>Univision News</span><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> Who wins and who loses in a trade war between the US and China? Christopher Herrick, director of international studies, says the impact of tariffs on Chinese products is not being "well considered."  <a  style='color:#A41D36' href='https://drive.google.com/file/d/1jhXvYWYEIuDlgwSRx4PUunrADyMcVpQr/view'>Read More</a></p><span class='otherNews'>Chronicle Of Higher Education</span><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> A five-panel meme has been a surprisingly effective tool for academic discourse. Katie Fitzpatrick, a visiting assistant professor of English, used it to frame a heated debate over historicism versus formalism.  <a  style='color:#A41D36' href='https://www.chronicle.com/article/Have-Academics-Finally-Found/243063'>Read More</a></p><h3>The Morning Call</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> Skulduggery creeps into publicly civil Lehigh Valley congressional race. Chris Borick, professor of political science, said primary fights can leave the winner with scars that could be opened during the general election.  <a  style='color:#A41D36' href='http://www.mcall.com/news/nationworld/pennsylvania/capitol-ideas/mc-nws-pa-7-congress-negative-poll-wild-edwards-morganelli-20180405-story.html'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> Most Lehigh Valley employers are concerned about the impact of opiod abuse on their workplaces, according to a new survey by Muhlenberg's Institute of Public Opinion for the Northampton County Heroin and Opioid Overdose Task Force.  <a  style='color:#A41D36' href='http://www.mcall.com/business/healthcare/mc-biz-workplace-opioid-drug-abuse-survey-20180322-story.html'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'> Pennsylvania's Republican gubernatorial fight goes big ugly. Chris Borick, professor of political science, comments.  <a  style='color:#A41D36' href='http://www.mcall.com/news/nationworld/pennsylvania/mc-nws-scott-wagner-paul-mango-campaign-20180405-story.html'>Read More</a></p>
+</div>
+
+ </div></div>
+ 
+ 
+
+<!-- announce message -->
+<!-- do not show postings if client is not local -->
+ 
+ 
+ <!-- show no matter what -->
+ 
+ <div class="row mobile-row" style='height:20px;color:#A41D36;background-color:#A8A8A8;font-weight:bold;margin-left:15px;max-width:730px;padding-left:5px'>
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' style="padding-left:5px"  > 
+<div  >Special Announcements
+<span class="toggle">
+&nbsp;&nbsp;<a style="color:#A41D36" href="javascript:animatedcollapse.show('announce');remember('announce','show')">
+(Open</a>
+<a  style="color:#A41D36" href="javascript:animatedcollapse.hide('announce');remember('announce','hide')">
+&nbsp;&#8226;&nbsp;Close)
+</a></span>
+</div> </div>
+</div>
+
+<div class="row mobile-row">
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' >
+
+
+<!-- display on load? -->
+<script type="text/javascript">
+animatedcollapse.addDiv('announce', 'fade=0', 'hide=0');
+</script>
+<div id='announce' >
+
+<h3>ATTENTION</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Reminder, Alternate side of the street parking continues on many streets surrounding the College.  Check the signs carefully on Wed and Thurs.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Morning Call newspapers are available FREE in the vestibule of Seegers Union.</p>
+</div>
+
+ </div></div>
+ 
+ 
+
+<!-- nod message -->
+<!-- do not show postings if client is not local -->
+ 
+ 
+ <!-- show no matter what -->
+ 
+  
+ 
+
+<!-- postings message -->
+<!-- do not show postings if client is not local -->
+ 
+
+<div class="row mobile-row" style='height:20px;color:#A41D36;background-color:#A8A8A8;font-weight:bold;margin-left:15px;max-width:730px;padding-left:5px' >
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' style="padding-left:5px" >
+<div  >Postings
+<span class="toggle">
+&nbsp;&nbsp;<a style="color:#A41D36" href="javascript:animatedcollapse.show('postings');remember('postings','show')">
+(Open</a>
+<a  style="color:#A41D36" href="javascript:animatedcollapse.hide('postings');remember('postings','hide')">
+&nbsp;&#8226;&nbsp;Close)
+</a></span>
+</div> </div>
+</div>
+
+<div class="row mobile-row">
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' style="padding-left:20px">
+
+
+<!-- display on load? -->
+<script type="text/javascript">
+animatedcollapse.addDiv('postings', 'fade=0', 'hide=0');
+</script>
+<div id='postings' >
+
+<h3>For Rent</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Two apartments: Both are 2 bedroom apartments located across the street from Muhlenberg College on North 23rd st.  Call Rich at 610-737-0810</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Avail Jun 1 - 724 N 24th St. 2 blocks from Campus. Up to 4 people. ALL BRICK 2-story. Lg living & dining rooms, fireplace, 3 big bedrooms, hardwood floors. Basement, fenced, backyard, covered open patio. 1.5 baths, 1 car garage, laundry. Natural gas heat. Gloria at 610-435-5388 or glorefff@yahoo.com  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/Houseforrent.jpg'>Read More</a></p><h3>For Sale</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Twin headboard, frame, mattress and box spring. Only 3 years old. Must be able to pick up. $150 OBO Email: lorenanash@muhlenberg.edu</p>
+</div>
+
+ </div></div>
+ 
+  
+ <!-- show no matter what -->
+ 
+  
+ 
+
+<!-- promos message -->
+<!-- do not show postings if client is not local -->
+ 
+ 
+ <!-- show no matter what -->
+ 
+ <div class="row mobile-row" style='height:20px;color:#A41D36;background-color:#A8A8A8;font-weight:bold;margin-left:15px;max-width:730px;padding-left:5px'>
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' style="padding-left:5px"  > 
+<div  >Promos &amp; Deals
+<span class="toggle">
+&nbsp;&nbsp;<a style="color:#A41D36" href="javascript:animatedcollapse.show('promos');remember('promos','show')">
+(Open</a>
+<a  style="color:#A41D36" href="javascript:animatedcollapse.hide('promos');remember('promos','hide')">
+&nbsp;&#8226;&nbsp;Close)
+</a></span>
+</div> </div>
+</div>
+
+<div class="row mobile-row">
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' >
+
+
+<!-- display on load? -->
+<script type="text/javascript">
+animatedcollapse.addDiv('promos', 'fade=0', 'hide=1');
+</script>
+<div id='promos' style="display:none" >
+
+<h3>Discount</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>European Concept Salon at 3015 College Heights Boulevard, Allentown, is happy to offer 1/2 price haircuts & $15 off any chemical service to Muhlenberg students, faculty & staff with a Muhlenberg ID. Please visit their website for hours and list of all services.  <a  style='color:#A41D36' href='http://www.europeanconceptsalon.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Biaggio Pizzeria on Cedar Crest Boulevard, near Target, is happy to offer a 10% discount to Muhlenberg students, faculty and staff with their "Berg ID. Please see their website for menu and hours of operation.  <a  style='color:#A41D36' href='http://www.biaggiopizza.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Altered Images Hair Studio on 22nd Street is pleased to offer discounts to Muhlenberg students, faculty and staff who show their "Berg I.D. Discounts range from $10-$15 depending on service.  <a  style='color:#A41D36' href='https://www.facebook.com/AlteredImagesHairStudio'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Starbucks City Center, 645 Hamilton St., Allentown, is pleased to offer a 10% discount to Muhlenberg students, faculty and staff with a Muhlenberg ID.  Please see website for menu, location and hours of operation.  <a  style='color:#A41D36' href='https://www.starbucks.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>SUBWAY at 1901 Hamilton Street, Allentown, is pleased to offer a 10% discount to students, faculty & staff with a Muhlenberg ID.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Yo Fresh Yogurt Caf'e at 4642 Broadway, Allentown, is happy to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID. Visit their Facebook page at yofreshallentown.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/muhlenbergadvertismentflyer.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Caf'e Frais at 23rd & Liberty Streets is pleased to offer a 10% discount to all Muhlenberg students, faculty & staff with a Muhlenberg ID. Caf'e Frais delivers, too! Please see link for updated menu.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/Cafe%20Frais_Menu11-17-17.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Truth Beauty Salon is pleased to offer a 20% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID. Please visit their website for location, services and hours.  <a  style='color:#A41D36' href='https://www.facebook.com/TruthBeautySalon/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Maza Middle Eastern Cuisine at 2440 Mickley Ave, Whitehall is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Parma Pizza is happy to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Please visit their website for menu, location and hours of operation:  http://parmapizzalv.com/</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Pit Stop Tire and Auto Center is pleased to offer a 10% discount on vehicle repairs & maintenance (excludes oil changes) to all Muhlenberg students, faculty & staff with ID.  $25 for State Inspection & Emmissions Test.  <a  style='color:#A41D36' href='http://www.pitstoptireandautocenter.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Salvatore Ruffino's restaurant is pleased to offer a 15% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID. Please visit their website for menu, location and hours of operation.  <a  style='color:#A41D36' href='http://salvatoreruffinos.net/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Shanty on 19th Street is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Please visit their website for menu, location and hours of operation.  <a  style='color:#A41D36' href='http://www.shantyon19th.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Manhattan Bagel, in the Village West Shopping Center, is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Please visit website for menu, location and hours of operation.  <a  style='color:#A41D36' href='https://www.manhattanbagel.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Mario's Pizza on Hamilton Street in Allentown is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with Muhlenberg ID.  Please see website for menu, location and hours of operation.  <a  style='color:#A41D36' href='http://www.mariosallentown.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Minuteman Press located at 645 W Hamilton St, Suite 103 in Allentown is pleased to offer 10% discount to Muhlenberg students, faculty & staff with Muhlenberg ID.  Please visit website for hours and directions.  <a  style='color:#A41D36' href='http://mmplv.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Nick's Diner is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Please visit website for menu, location and hours of operation. http://nicksdinerpa.com/</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Parkland Diner at 2702 Walbert Avenue, Allentown, is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID. The discount is available Mon - Thurs.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Gourmet Chinese Buffet, at 3317 Hamilton Boulevard, Allentown, is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Island in the Sun, Jamaican Restaurant, is please to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Please visit website for menu, location and hours of operation.  <a  style='color:#A41D36' href='http://islandinthesun.vpweb.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Liberty Bell Museum is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Please see their website for location and hours of operation.  <a  style='color:#A41D36' href='http://libertybellmuseum.org/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>LMS Nails at 620 N 19th Street, Allentown, is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID. Contact Lisa at 610-439-7899 or lsaylor60@gmail.com</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Damascus Restaurant at 449 N 2nd St,Allentown, is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Please visit their website for menu, location and hours of operation. http://www.damascusrestaurantpa.com/</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Centro Restaurant in downtown Allentown is pleased to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Exceptions may apply.  Please see website for menu, location and hours.  <a  style='color:#A41D36' href='http://centroallentown.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Cut Outs Salon located at 950 W. Walnut St, Allentown, is offering a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Contact Brian or Carol at 610-820-3875 or cutoutssalonspa@verizon.net</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Dime in downtown Allentown is pleased to offer a 10% discount to Muhlenberg students, faculty and staff with a Muhlenberg ID.  Exceptions do apply.  Please visit website for menu, times and location.  <a  style='color:#A41D36' href='http://thedimeallentown.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Foods of the Mediterranean is offering a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  Visit website for menu, location and hours of operation.  <a  style='color:#A41D36' href='https://www.mediterraneanfoodpa.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Garden Gate Natural Foods, located at 17 S. 9th St, Allentown, is offering a 10% discount to Muhlenberg students, faculty & staff with ID.  The discount applies to all non-sale vitamins, supplements, herbs & protein powders.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Grille 3501 is please to offer a 15% discount to all Muhlenberg students, faculty & staff who show their I.D.  The discount excludes alcohol, happy hour and special events.  Please visit their website for location, hours and menu.  <a  style='color:#A41D36' href='http://grille3501.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Bellissimo Ristorante on Tilghman Street in Allentown is offering a 10% discount to Muhlenberg students, faculty and staff with a Muhlenberg ID.  Please visit website for menu, location and hours.  <a  style='color:#A41D36' href='https://bellissimoristorante.com/contact/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The MainGate at 448 N 17th Street, Allentown, is offering discounts to students, faculty and staff with a 'Berg ID.  More details to follow.  Special events to be advertised via digital signs in Seegers and in the 'Berg Bulletin.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Fairgrounds Hotel restaurant, located at 448 N 17th Street, Allentown, will be offering a 10% discount to students, faculty & staff with a "Berg ID. Please see website for hours and menu.  Exceptions may apply.  <a  style='color:#A41D36' href='http://fairgroundshotel.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Udder Bar at 1852 W. Allen St, Allentown, is please to offer Muhlenberg students, faculty & staff a 15% discount on their ice cream and sweet treats. Please visit their website for the menu.  <a  style='color:#A41D36' href='http://theudderbar.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>El Castillo del Caribe Restaurant at 346 Ridge Ave, Allentown, is please to offer a 10% discount to Muhlenberg students, faculty & staff with a Muhlenberg ID.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/ElCastillodelCaribe.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Heffelfinger's Coffee & Tea in the Allentown Farmers Market is offering a 10% discount to all students, faculty & staff with a 'Berg ID.  Please visit the Farmers Market website for more information.  http://www.allentownfarmersmarket.com/</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>MaryAnn Donut Kitchen in the Allentown Farmers Market is offering a 10% discount to students, faculty and staff with a 'Berg ID. Please visit their website for menu and hours.  <a  style='color:#A41D36' href='http://maryanndonutkitchen.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Silver Shears Salon at 1821 W Allen St, Allentown, is offering a discount to students, faculty & staff with a "Berg Id.  15% off men's & women's haircuts & 10% off hair color service. See website for hours and services.  <a  style='color:#A41D36' href='http://www.silvershearslv.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Anthony Ashley (Salon) at 1740 W Allen St, Allentown, is offering a discount to students, faculty & staff with a "Berg Id. 15% off men's & women's haircuts & 10% off hair color service. See website for hours and services. Read More  <a  style='color:#A41D36' href='http://anthonyashleyhd.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Ringer's Roost on Liberty Street is reaffirming their 10% discount to Muhlenberg students, faculty and staff with a "Berg ID.  Visit their website for menu and hours:       http://www.ringersroost1801.com/  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/StudentDiscountAd12-28.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Two Sisters Bagels at the Allentown Fairground Farmers Market is offering a 10% discount to students, faculty and staff with a 'Berg ID.  Please visit the Fairgrounds Farmers Market website for location and hours.  http://www.allentownfarmersmarket.com/</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Southern Delights at the Allentown Fairground Farmers Market is offering a 10% discount to all students, faculty and staff with a "Berg ID.  Please visit their website for hours and location.  <a  style='color:#A41D36' href='http://www.southerndelights.us/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Country Pantry at the Allentown Fairground Farmers Market is offering a 10% discount to all students, faculty and staff with a "Berg ID.  Please visit the Fairgrounds Farmers Market website for location and hours. http://www.allentownfarmersmarket.com/</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Dave's Vacuum Cleaner Service LLC  on 7th Street & in the Allentown Farmers Market is offering a 10% discount to all students, faculty & staff with a Berg 'ID.  Please visit their website for services, locations and hours.  <a  style='color:#A41D36' href='http://www.davesvac.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Johnny's Fresh Meats in the Allentown Farmers Market is offering a 10% discount to students, faculty and staff with a 'Berg ID. Visit the Farmers Market website for more information. http://www.allentownfarmersmarket.com</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>ELEMENTS MASSAGE at Village West is offering the following discount with a 'Berg ID; $49 for 60 min. massage & 20% off thereafter. See website for location, hours and other services.  <a  style='color:#A41D36' href='http://elementsmassage.com/allentown'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Mediterranean Caf'e & Grill in Fogelsville is offering a 10 percent discount to all students, faculty & staff with a 'Berg ID.  Please visit their website for address, hours and menu.  <a  style='color:#A41D36' href='http://www.medicafegrill.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Organic Tans & Beauty Bar on Allen Street is offering a 15% discount to all Muhlenberg students, faculty and staff with their 'Berg ID.  See link for location, hours and services.  <a  style='color:#A41D36' href='http://organictanslv.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Nostos Greek Restaurant (seafood & grill) at 19th & Tilghman Streets, Allentown, is offering a 20% discount to EACH Muhlenberg student, faculty member and staff associate with a 'Berg ID. Discount does not apply to groups presenting only one ID. Please visit the website for location, hours and menu  <a  style='color:#A41D36' href='http://www.nostospa.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Fairgrounds Grocery Store at the Allentown Fairground Farmers Market is offering a 10% discount to all students, faculty and staff with a "Berg ID.  Please visit their website for location and hours.  http://www.allentownfarmersmarket.com/</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Lazeez Fresh Mediterranean Grillat 4666 Broadway is offering a 10% discount with Berg ID.  Menu and hours here.  <a  style='color:#A41D36' href='http://www.lazeezgrill.com'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Prime Steak House is offering a 10% discount with Berg ID.  Please visit their website for menu and hours.  <a  style='color:#A41D36' href='http://www.primestkhouse.com'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Wally's Deli in Allentown and Emmaus offers a 10% discount M-F and 15% discount on Saturdays when you present your Muhlenberg ID. See the website for menu and locations.  <a  style='color:#A41D36' href='http://wallys-deli.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Kow Thai Take Out, located at 1201 West Linden Street, Allentown, PA 18102, is offering a 10% discount to students, faculty and staff with a Muhlenberg ID. Please call 610-770-9100 or 610-770-1654. Visit website to view menu.  <a  style='color:#A41D36' href='http://www.kowthairosthai.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Union and Finch, an American Style Bistro, is offering a 15% discount to students, faculty and staff with a Muhlenberg ID. The discount does not apply to drinks or happy hour specials. Please visit their website for location, hours and menu.  <a  style='color:#A41D36' href='http://www.unionandfinch.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Rodizio Grill, a Brazilian Steakhouse on Lehigh Street, is offering a 10 percent discount to all faculty, staff and students.  Just present your ID and get 10 percent off.  <a  style='color:#A41D36' href='http://rodiziogrill.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Hummus House, at 15th and Chew, is offering 15 percent discounts for all faculty, staff and students with a Muhlenberg ID.  <a  style='color:#A41D36' href='http://www.thehummushouse.com'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Taqueria Los Amigos is offering a 10% discount with Muhlenberg ID.  Discount not valid on Tuesdays, but check out their taco special that day!  Restaurant is at 515 N 7th Street.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>assembly88 will offer 15% off any purchase excluding sale items with ID. Brands include Cole Haan, Sperry, Robert Graham, Levis, Adriano Goldschmied, Herschel Supply Company, & Patagonia. For website:  <a  style='color:#A41D36' href='http://www.assembly88.com'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>WingStop at 1601 Liberty Street is offering a 10% discount with Berg ID! Offer cannot be combined with $.60 boneless wing special on Mondays & Tuesdays.  Website and menu here.  <a  style='color:#A41D36' href='http://www.wingstop.com/'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>IHEART MUHLENBERG PARTICIPANTS Update!- Students, faculty and staff, enjoy discounts from many local restaurants & vendors who participate in the iHeart Muhlenberg Program. Be sure to show your "Berg ID at time of purchase. Exceptions may apply. A complete list of participants is attached.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/PARTICIPANTSiHeartMuhlenberg.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Blue Mountain Resort is please to renew the seasonal discount lift ticket prices to Muhlenberg students, faculty & staff with a Muhlenberg ID. Please log onto the link provided in the New Discount Corporate Partner Pass for details.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/BlueMountainNewDiscountCorporatePartnerPass.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>IHeart Muhlenberg Participants.  Updated list of local businesses offering discounts to Muhlenberg College students, faculty and staff.  Enjoy!!  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/PARTICIPANTSiHeartMuhlenberg.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Use your Muhlenberg ID and get 15% off pizza, subs and meals at Biaggio Restaurant (near Weis and Target). Right next to the shuttle stop.  Or, they deliver too.</p><h3>Promotional Deal</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Fiesta Ole at 1116 Chestnut Street, Emmaus, is pleased to offer a 15% discount to students, faculty & staff with their "Berg ID. Text mules to 337-91 for additional special offers. Delivery is free for take out over $30. https://fiestaole.com/  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/PARTICIPANTSiHeartMuhlenberg.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Barreform is a boutique class-based fitness studio on the Southside of Bethlehem offering a unique mix of classes: barre, TRX, boot camp, yoga and the exclusive Lagree megaformer. Offering up to 30% off full-priced class packages and memberships. Please visit website for details.  <a  style='color:#A41D36' href='http://www.barreform.com/'>Read More</a></p><h3>Special</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Pig Pen Fun Bar at 702 Union Boulevard, Allentown, is pleased to offer free cover charge for all concerts to Muhlenberg students, faculty and staff with a "Berg ID.  <a  style='color:#A41D36' href='https://www.pigpenfunbar.com/'>Read More</a></p>
+</div>
+
+ </div></div>
+ 
+ 
+
+<!-- general message -->
+<!-- do not show postings if client is not local -->
+ 
+ 
+ <!-- show no matter what -->
+ 
+ <div class="row mobile-row" style='height:20px;color:#A41D36;background-color:#A8A8A8;font-weight:bold;margin-left:15px;max-width:730px;padding-left:5px'>
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' style="padding-left:5px"  > 
+<div  >General Information
+<span class="toggle">
+&nbsp;&nbsp;<a style="color:#A41D36" href="javascript:animatedcollapse.show('general');remember('general','show')">
+(Open</a>
+<a  style="color:#A41D36" href="javascript:animatedcollapse.hide('general');remember('general','hide')">
+&nbsp;&#8226;&nbsp;Close)
+</a></span>
+</div> </div>
+</div>
+
+<div class="row mobile-row">
+<div class='col-sm-12 col-md-12 col-lg-12 col-xs-12' >
+
+
+<!-- display on load? -->
+<script type="text/javascript">
+animatedcollapse.addDiv('general', 'fade=0', 'hide=1');
+</script>
+<div id='general' style="display:none" >
+
+<h3>All Students</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>International Pre-Orientation Student Leader application now open. Learn more and apply to be a student leader to support the new incoming international students for their pre-orientation in Aug. Deadline Apr 19.  <a  style='color:#A41D36' href='https://docs.google.com/forms/d/e/1FAIpQLScCHgw5A2QOEeb4A8bNR7uKkD3SHUubQ_JcAx68058RehgJ9Q/viewform'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>If you are interested in taking individual Applied Music Lessons, regardless of major/minor (for an additional fee) or participating in a Music Ensemble for Fall 2018, please come to the Music Office, CA 255 with registration questions. REGISTRATION DEADLINE IS FRI, AUG 27, 2018.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/BergBulletinNotice.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>ODK Leadership Honor Society is hosting the MULE leadership award ceremony on Wed, Apr 11. Please see the attached nomination form.  <a  style='color:#A41D36' href='https://docs.google.com/forms/d/1p9oA3bYIvi3LdbndAYuLOEu2kq3-rvLd0TiGGBVa4GM/edit'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Barnes Foundation Field Trip - Join the Muhlenberg French Club for an astounding guided tour of the French Collection of the Barnes Foundation - Philadelphia. Sun, Apr 8. Only 10 spots left! Free of charge. Reserve your spot ASAP! Email: ioannachatzidimitriou@muhlenberg.edu  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/Barnestripposter.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Cardinal Shuttle Schedule for Spring Semester 2018  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/CardinalShuttleFridaySaturdayNew2017A2.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>The Grey Shuttle Schedule for Spring Semester 2018.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/Greyshuttle.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Spanish Table/La Mesa Espa~nola: Practice your Spanish outside of class right here on campus. La Mesa Espanola is an opportunity for you to meet and talk to other students, professors and friends in Spanish! - All levels welcome.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/SpanishTable-MesaSpring2018.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Russian Table - Practice speaking Russian right here on campus. The Russian conversation table is an opportunity to talk to other students or professors, play games and have fun! All levels of Russian welcome! Every Thurs, Feb 1 to May 3 from 12;30 to 1;15 pm.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/RussianTableSpring2018.pdf'>Read More</a></p><h3>Campus-Wide</h3><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Muhlenberg College UN Lecture Series: Weapons Destruction, Demining, and Post-Conflict Stabilization by Steven Costner, Department of State, on Fri, Apr 13, from 2 to 3 pm in Seegers Union 108-109.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/Costner.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Muhlenberg College English Department cordially invites you to a Senior Honors Thesis Presentation on Tues, Apr 10, from 5 to 7 pm in the Hoffman House. Hors d'oeuvres and drinks will be served.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/Seniorthesisposter.jpg'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>This seminar, "What to do with a Ph.D." will be given by Muhlenberg 2004 graduate Lindsay Marjoram. It will take place on Apr 13th from 2 to 3 pm in Shankweiler 440.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/WhattodowithPHD.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Share in the Magic - Help Make Hunger Disappear!
+The 'Berg Bookshop and Office of Community Engagement are proud to sponsor a food drive with donations being given to the Jefferson Elementary Food Pantry.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/ShareintheMagic.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Summer employment positions are available to Muhlenberg students and college-age children of Muhlenberg faculty and staff. Please complete the general application and submit to the office of Human Resources. APPLY NOW! The general application is attached.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/Summer18application.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Writers at Muhlenberg Presents: Sarah Blake. Reading & book signing on Thurs, Apr 12, 7 to 8 pm in Miller Forum, Moyer Hall. Sara Blake's books will be available for cash purchase.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/SarahBlake.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Top Naach presents our 3rd Annual Holi Celebration beginning in the Event Space at 5 pm on Fri, Apr 20. The performances will be followed by the throwing of color on the College Green.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/HoliCelebration.jpeg'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Return of the Repressed: Lecture on Italian Film and Holocaust Memory by Dr. Millicent Marcus, Professor of Italian at Yale University, on Tues, Apr 10, from 6 to 7 pm in Seegers 111-112.  Free & open to the Public. Contact: dleisawitz@muhlenberg.edu  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/MarcusLecture(Italian)poster.pdf'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>WMUH and Trexler Library present an exhibit celebrating the 70th Anniversary of radio at Muhlenberg. Mar 21 to Apr 30.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Michael London in Concert - A celebration of Rumi & new music. Featuring clarinet/sax player, Paul Butler. Wed, Apr 21, at Unity of Lehigh Valley in Emmaus. Doors open at 7 pm. For ticket information, see poster.  <a  style='color:#A41D36' href='http://www.muhlenberg.edu/main/aboutus/pr/bulletin/MichaelLondonPoster.jpg'>Read More</a></p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Shabbat Services - Join Muhlenberg College Hillel for Shabbat Services every Fri night from 5 to 6 pm, Jan 19 to Feb 23, and from 5;30 to 6;30, Mar 16 to May 4. Check our Facebook events for more details.</p><p style='border-bottom:thin dashed #CCCCCC;padding-bottom:8px'>Knitting to help end homelessness: Faculty, staff & student knitters are invited to join Nice Knitters of Muhlenberg to knit hats, scarves & mittens for adults & kids. The Berks Coalition to End Homelessness distributes during their cold weather outreach program. Contact: cecilepillar@muhlenberg.edu</p>
+</div>
+
+ </div></div>
+ 
+ 
+
+	
+<div class="accordion" >
+<div class="item">
+    <div class="title" style='border:thin solid #cccccc;background-color:#333333;font-size:11px;line-height:10px;padding-top:5px;height:20px;text-align:right;margin-left:15px;width:730px'>
+<a style='color:#CCCCCC;text-decoration:none' href="http://www.muhlenberg.edu/messageboard/bergbulletin/options">Post Items</a>
+&#8226;  | <a style='color:#CCCCCC;text-decoration:none' href="http://www.muhlenberg.edu/messageboard/bergbulletin/options">
+Subscribe to Berg Bulletin</a>&#8226;  | 
+<a style='color:#CCCCCC;text-decoration:none' href="http://webapps.muhlenberg.edu/MessageBoard/KeepAlive/archiveForm.aspx">
+Search Archive</a>
+</div>
+
+  </div>
+
+</div>
+</div>
+</div>
+<!-- end of message board -->
+
+</div><div class="col-sm-6  col-md-4  col-lg-4 col-xs-12">  
+      
+
+
+          <div class="contact-box" data-sidebar-contact-target>
+          </div>
+      
+  
+      <a kdg-scroll-to="body, html" kdg-scroll-to-dur="500" class="hidden-sm hidden-md hidden-lg">
+        <div class="back-to-top">
+          <h5><span class="fa fa-chevron-up"></span></h5>
+        </div>
+      </a>
+        
+      </div>
+
+
+
+   </div>
+
+
+  </div>
+<!--</div>-->
+<!--/container-->
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <a href="http://muhlenberg.edu"><img src="/media/kdmedia/images/footer-logo.png" alt="Muhlenberg College"></a>
+      </div>
+
+      <div class="footer-contact">
+          <p><br/>2400 Chew St., Allentown, PA 18104-5586 | 484-664-3100 <br/>
+          &copy; Muhlenberg College <script type="text/javascript">var d = new Date();
+           document.write( d.getFullYear());</script> | <a target="_blank" href="http://muhlenberg.edu/main/aboutus/oit/about/policies_procedures/webprivacystatement/">Web Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--JS Goes Here-->
+  <script type="text/javascript" src="/media/kdmedia/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="/media/contentassets/js/it/kdg-ui-hub.js"></script>
+  <!-- <script type="text/javascript" src="/media/kdmedia/js/kdg-ui.js"></script> -->
+
+  <script type="text/javascript" src="/media/kdmedia/js/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script>
+  var largeGrid = $('body, html').find('.grid-sizer');
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'masonry',
+    percentPosition: (largeGrid.length) ? true : false,
+    masonry: {
+  		columnWidth: (largeGrid.length) ? '.grid-sizer' : null
+    }
+  });
+</script>
+
+</body>
+
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WDV75R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDV75R');</script>
+<!-- End Google Tag Manager -->
+
+</html>
