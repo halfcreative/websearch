@@ -13,10 +13,15 @@ import re
 ##      In addition, the HTML contents will be included.
 ## For Extra Credit:
 ##      Phone Number finding
+##      Finds Names
 
 
 #CHANGELOG
 #--------- 
+#4/10/2018-2.3
+#2.3:
+#-Added name finding regex
+#---------
 #4/7/2018-2.2
 #2.2:
 #-Started Extra Credit:
@@ -62,6 +67,7 @@ class crawler():
         self.rellinksfound = 0
         self.abslinksfound = 0
         self.phones = []
+        self.nameslist = [] # list of names with titles found (ie Dr. Mr. Mrs. John Smith)
         return
 
     #Crawl will have the crawler find every link on the page, store the ones not visited in a list, then visit each page on the domain
@@ -86,12 +92,14 @@ class crawler():
         regex1 = re.compile(r'href=[\'"]?([^\'" >]+)')
         #regex2 - All relative links
         regex2 = re.compile(r'^\/.+[^pdf|css|pptx?|docx?|png|jpeg|gif]$')
-        #regex3 - All absolute links
+        #regex3 - absolute links to the baseurl
         regex3 = re.compile(r'https?:\/\/(www\.)?'+baseurlbegin+'\.'+baseurlend+'(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
+        #regex3_5 - absolute links to the baseurl
+        regex3_5 = re.compile(r'https?:\/\/(www\.)?(.+)(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
         #regex4 - Phone Numbers
         regex4 = re.compile(r'\([0-9]{3}\)|[0-9]{3}[-,.\s]?[0-9]{3}[-,.\s]?[0-9]{4}')
-        #regex5 - 
-        regex5 = re.compile(r'.+@[.+]\.[com|org|edu]')
+        #regex5 - First and Last names w/ Title (?)
+        regex5 = re.compile(r'(Dr\.|Mr\.|Mrs\.|Ms\.).?([A-Z]\w+)\s([A-Z]\w+).(.+Professor)?')
 
         #Heres where the actual crawiling starts!
         while len(self.tovisit) > 0:
@@ -117,7 +125,11 @@ class crawler():
                 else:
                     #THE PAGE WAS DECODED!
                     
-
+                    names = regex5.findall(page)
+                    for name in names:
+                        tmpname = name[0] + name[1] + " " + name[2]
+                        if tmpname not in self.nameslist:
+                            self.nameslist.append(tmpname)
                     #Find Phone numbers
                     phone_nums = regex4.findall(page)
                     for number in phone_nums:
@@ -128,9 +140,10 @@ class crawler():
                     links = regex1.findall(page)
                     linksrel = list(filter(regex2.match,links))
                     linksabs = [m.group(2) for m in (regex3.match(a) for a in links) if m] #creates a list of the absolute links for this domain
+                    alllinksabs = [m.group(0) for m in (regex3_5.match(a) for a in links) if m] #creates a list of all absolute links
 
                     #Make Page and Add to visit:
-                    self.makepage(self.filesmade,visiting,len(linksrel),len(linksabs),page)
+                    self.makepage(self.filesmade,visiting,len(linksrel),len(alllinksabs),page)
                     self.visited.append(visiting)
 
                     #End the program if the number of files made would exceed the limit
@@ -158,8 +171,8 @@ class crawler():
         print("There were {0} unique links, {1} of them relative and {2} of them absolute".format(self.linksfound,self.rellinksfound,self.abslinksfound))
         print("Found {0} phone numbers".format(len(self.phones)))
         print(self.phones)
-        print("Found {0} emails".format(len(self.emailadds)))
-        print(self.emailadds)
+        print("Found {0} names with titles".format(len(self.nameslist)))
+        print(self.nameslist)
 
     #Makes page with the order visited, the number of links relative and absolute and the content of the html
     def makepage(self,num,site,relative,absolute,content):
@@ -172,5 +185,5 @@ class crawler():
 
 def main():
     webby = crawler()
-    webby.crawl("http://www.muhlenberg.edu",10)
+    webby.crawl("http://www.muhlenberg.edu",100)
 main()
