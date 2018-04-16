@@ -9,6 +9,7 @@ import re
 ## Welcome to the crawler! I made this for my AI class
 ## The crawler has 1 function that takes a URL to crawl
 ## It will make 1 text file for each page visited.
+## ^This project was repurposed for the Search Engine^
 ## In each text file, the top will have the URL of the page visited, the number of relative links on the site, and the number of absolute links on the site
 ##      In addition, the HTML contents will be included.
 ## For Extra Credit:
@@ -17,7 +18,11 @@ import re
 
 
 #CHANGELOG
-#--------- 
+#---------
+#4/16/2018-2.4
+#2.4:
+#-Renamed file
+#-Prepared for use in search engine
 #4/10/2018-2.3
 #2.3:
 #-Added name finding regex
