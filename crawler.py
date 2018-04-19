@@ -68,7 +68,7 @@ class crawler():
         self.baseurl = ""
         self.baseurlbegin = ""
         self.baseurlend = ""
-        self.visited = [] # ALL VISITED LINKS INCLUDING NON-HTML Links
+        self.visited = dict() # ALL VISITED LINKS INCLUDING NON-HTML Links
         self.tovisit = [] # LINKS on the list to visit
         self.filesmade = 0
         self.linksfound = 0
@@ -146,7 +146,7 @@ class crawler():
                     alllinksabs = [m.group(0) for m in (regex3_5.match(a) for a in links) if m] #creates a list of all absolute links
                     #Make Page and Add to visit:
                     self.makepage(self.filesmade,visiting,len(linksrel),len(alllinksabs),page)
-                    self.visited.append(visiting)
+                    self.visited.update(visiting=1)
                     #End the program if the number of files made would exceed the limit
                     if limited and self.filesmade >= limit:
                         print("Reached specified limit:{0}".format(limit))
