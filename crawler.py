@@ -65,6 +65,8 @@ def log(n):
 class crawler():
     def __init__(self):
         self.baseurl = ""
+        self.baseurlbegin = ""
+        self.baseurlend = ""
         self.visited = [] # ALL VISITED LINKS INCLUDING NON-HTML Links
         self.tovisit = [] # LINKS on the list to visit
         self.filesmade = 0
@@ -88,14 +90,14 @@ class crawler():
         #Regular Expressions to parse page. Only want/need to make these objects once.
         #regex - a regular expression to parse the base URL for the name and extension ie muhlenberg and .edu
         regex = re.compile(r'https?:\/\/(www\.)?(.+)\.(.+)$')
-        baseurlbegin = regex.match(self.baseurl).group(2) # for baseurl https://www.muhlenberg.edu this returns "muhlenberg"
-        baseurlend = regex.match(self.baseurl).group(3)# for baseurl https://www.muhlenberg.edu this returns "edu"
+        self.baseurlbegin = regex.match(self.baseurl).group(2) # for baseurl https://www.muhlenberg.edu this returns "muhlenberg"
+        self.baseurlend = regex.match(self.baseurl).group(3)# for baseurl https://www.muhlenberg.edu this returns "edu"
         #regex1 - All links, as marked by href
         regex1 = re.compile(r'href=[\'"]?([^\'" >]+)')
         #regex2 - All relative links
         regex2 = re.compile(r'^\/.+[^pdf|css|pptx?|docx?|png|jpeg|gif]$')
         #regex3 - absolute links to the baseurl
-        regex3 = re.compile(r'https?:\/\/(www\.)?'+baseurlbegin+'\.'+baseurlend+'(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
+        regex3 = re.compile(r'https?:\/\/(www\.)?'+self.baseurlbegin+'\.'+self.baseurlend+'(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
         #regex3_5 - absolute links to the baseurl
         regex3_5 = re.compile(r'https?:\/\/(www\.)?(.+)(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
         #regex4 - Phone Numbers
@@ -172,14 +174,14 @@ class crawler():
         print(self.nameslist)
     #Makes page with the order visited, the number of links relative and absolute and the content of the html
     def makepage(self,num,site,relative,absolute,content):
-        title = "page#" + str(num) + ".txt"
+        title = self.baseurlbegin + "page#" + str(num) + ".txt"
         page = open(title,'w+')
         self.filesmade +=1
         page.write("URL:{0}\nNumber of Relative Links:{1}\nNumber of Absolute Links:{2}\n".format(site,relative,absolute))
         page.write(content)
         page.close()
 #main function to test
-#def main():
-#    webby = crawler()
-#    webby.crawl("http://www.muhlenberg.edu",100)
-#main()
+def main():
+    webby = crawler()
+    webby.crawl("http://www.muhlenberg.edu",100)
+main()
