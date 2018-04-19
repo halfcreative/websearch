@@ -1,0 +1,1424 @@
+URL:http://www.muhlenberg.edu/main/aboutus/campus-map/
+Number of Relative Links:17
+Number of Absolute Links:24
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Campus Map</title>
+    <script src="https://code.jquery.com/jquery.js"></script>  
+    
+    <!-- KDG Related files and additives -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/owl.transitions.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/kdg.css" />
+    <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/print.css" />
+  <!-- TinyMCE Styles -->
+    <link rel="stylesheet" type="text/css"  href="/media/styleassets/css/tinymce-styles.css" />
+  
+  
+    <link rel="icon" href="/media/kdmedia/images/favicon.ico">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css"  href="/media/kdmedia/css/ie9-and-down.css" />
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <noscript>
+    <div class="noscript-modal">
+      <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+      <div class="noscript-overlay"></div>
+      <div class="modal">
+        <h3 class="red">Whoops! Please enable Javascript</h3>
+        <h4>We've worked hard to update this site with the latest technology. To ensure that you are getting the best experience, please enable Javascript in your browser's settings. Thank you!</h4>
+        <label class="button red" for="modal-closing-trick">
+          Close
+        </label>
+       </div>
+     </div>
+  </noscript>
+  
+  <div class="modal old-browser">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Sorry, but your browser is out of date.</h4>
+        </div>
+        <div class="modal-body">
+          <h4>This website was developed using the latest technology available, and therefore requires a newer, safer browser than the one you are currently running. Use the links below to download the most up to date version of your browser and try again!</h4>
+          <a class="browser-block" href="http://www.google.com/chrome" target="_blank">
+            <img src="/media/kdmedia/images/chrome.png" alt="Chrome" />
+          </a><!--
+          --><a class="browser-block" href="http://www.mozilla.org/firefox/new/" target="_blank">
+          	<img src="/media/kdmedia/images/firefox.png" alt="Firefox" />
+          </a><!--
+          --><a class="browser-block" href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">
+          	<img src="/media/kdmedia/images/internet-explorer.png" alt="Internet Explorer" />
+          </a><!--
+          --><a class="browser-block" href="http://support.apple.com/downloads/#safari" target="_blank">
+          	<img src="/media/kdmedia/images/safari.png" alt="Safari" />
+          </a><!--
+          --><a class="browser-block" href="http://www.opera.com/download" target="_blank">
+          	<img src="/media/kdmedia/images/opera.png" alt="Opera" />
+          </a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    <div class="modal-backdrop fade in"></div>
+  </div><!-- /.modal -->
+  
+  <!-- navigation object : Tool I Am Links --><div class="collapse" id="iam-navigation">
+	<ul>
+        <li>
+          	<a href="/main/admissions"
+               style='background-image:url("/media/kdmedia/images/iamphotos/prospective-link.jpg");'>
+              	Prospective Student
+          	</a>
+      	</li>
+        <li>
+      		<a href="/incoming/"
+               style='background-image:url("/media/kdmedia/images/iamphotos/incoming-link.jpg");'>
+              	Incoming Student
+          	</a>	
+      	</li>
+        <li>
+      		<a href="/gateways/current-students/"
+               style='background-image:url("/media/kdmedia/images/iamphotos/current-link.jpg");'>
+              	Current Student
+          	</a>
+      	</li>
+        <li>
+      		<a href="/gateways/faculty-staff"
+               style='background-image:url("/media/kdmedia/images/iamphotos/faculty-link.jpg");'>
+              	Faculty & Staff
+          	</a>
+      	</li>
+        <li>
+      		<a href="/gateways/parents"
+               style='background-image:url("/media/kdmedia/images/iamphotos/parents-link.jpg");'>
+              	Parent
+          	</a>
+      	</li>
+      	<li>
+          	<a href="/alumni"
+               style='background-image:url("/media/kdmedia/images/iamphotos/alumni-link.jpg");'>
+              	Alumni
+          	</a>
+      	</li>
+  	</ul>
+    <div class="clearfix"></div>
+</div><div class="collapse" id="tool-navigation">
+	<ul>
+        <li>
+          	<a href="/contact">
+              	Contact
+          	</a>
+      	</li>
+        <li>
+      		<a href="/main/aboutus/campus-map/">
+              	Campus Map
+          	</a>	
+      	</li>
+        <li>
+      		<a href="/tactical/azfind.htm">
+              	A-Z Index
+          	</a>
+      	</li>
+        <li>
+      		<a href="/directory">
+              	Directory
+          	</a>
+      	</li>
+        <li>
+      		<a href="http://trexler.muhlenberg.edu/">
+              	Library
+          	</a>
+      	</li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+
+  <nav class="navbar" id="top">
+      <div class="container">
+          <div class="row">
+  		  	  <div class="expand-buttons">
+  				<ul>
+            		<a href="/alumni/give"><li class="give-btn hidden-xs">
+  						Give
+  					</li></a>
+            		<a data-toggle="collapse" data-bootstrap-collapse-help="1" href="#tool-navigation" aria-expanded="false" aria-controls="tool-navigation" class="tool-link collapsed"><li class="tool-button">
+  						Tools <span class="fa fa-caret-down"></span>
+  					</li></a>
+  					<a data-toggle="collapse" data-bootstrap-collapse-help="1" href="#iam-navigation" aria-expanded="false" aria-controls="iam-navigation" class="iam-link collapsed"><li class="iam-button">
+  						I am <span class="fa fa-caret-down"></span>
+  					</li></a>
+            		<div class="clearfix"></div>
+  				</ul>
+  			</div><!--/expand-buttons-->
+  			<div class="col-xs-12 col-sm-6">
+              <a href="/"><img src="/media/kdmedia/images/header-logo.png" alt="Muhlenberg College Logo"></a>
+  				<a data-toggle="collapse" href="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav" class="mobile-menu hidden-lg hidden-md hidden-sm"><span class="fa fa-bars"></span></a>
+  			</div>
+  			<div class="col-xs-12 col-sm-6 hidden-xs">
+          		<div class="header-right">
+  					<div class="search ">
+                      <form action="/search/results.html" method="get" name="SearchForm" id="SearchForm">
+  							
+                			<input name="q" type="text" size="0" id="q" value="" placeholder="search">
+                			<button type="Submit" class="btn btn-search"><span class="fa fa-search"></span></button>
+  						</form>
+              			<a target="_child" href="http://twitter.com/muhlenberg"><span class="fa fa-twitter"></span></a>
+              			<a target="_child" href="http://www.facebook.com/MuhlenbergCollege"><span class="fa fa-facebook"></span></a>
+  					</div>
+  				</div>
+  			</div>
+  		</div><!--row-->
+    </div>
+    <div class="inner-nav hidden-xs">
+      <div class="container">
+      	  <div class="row">
+        	  <div class="nav-holder">
+    			  <a name="navigation" style="display:none"></a>
+    			  <div class="nav">
+                      <!-- navigation object : Main Menu KD --><ul><li><a href="/main/aboutus/">About Us</a></li><li><a href="/main/admissions/">Admissions</a></li><li><a href="/academics/">Academics</a></li><li><a href="/student-life/">Student Life</a></li><li><a href="http://muhlenbergsports.com/" target="_blank">Athletics</a></li><li><a href="/news-and-events/index.php">News &amp; Events</a></li><li><a href="/main/wescoe/">Adult Learning</a></li></ul>
+    			  </div>
+    		  </div>
+          </div><!--row-->
+        </div>
+    </div>
+  </nav>
+
+  <div id="mobile-nav" class="collapse hidden-sm hidden-md hidden-lg">
+    <div class="search ">
+      <form action="/search/results.html" method="get" name="SearchForm" id="SearchForm">
+        <input name="q" type="text" size="0" id="q" value="" placeholder="search">
+        <button type="Submit" class="btn btn-search"><span class="fa fa-search"></span></button>
+      </form>
+    </div>
+        
+    <!-- navigation object : Main Menu KD --><ul><li><a href="/main/aboutus/">About Us</a></li><li><a href="/main/admissions/">Admissions</a></li><li><a href="/academics/">Academics</a></li><li><a href="/student-life/">Student Life</a></li><li><a href="http://muhlenbergsports.com/" target="_blank">Athletics</a></li><li><a href="/news-and-events/index.php">News &amp; Events</a></li><li><a href="/main/wescoe/">Adult Learning</a></li></ul>
+        
+    <a target="_child" href="http://www.facebook.com/MuhlenbergCollege"><span class="fa fa-facebook"></span></a>
+    <a target="_child" href="http://twitter.com/muhlenberg"><span class="fa fa-twitter"></span></a>
+    <a href="/alumni/give" class="btn primary-btn">Give</a>
+  </div>
+
+  <div class="container">
+    <div class="row mobile-row">
+      <div class="row two-col page-content about-us">
+        <!--Page Content-->
+        <div class="col-lg-9 col-sm-8 col-xs-12"><div class="page-header" style='background-image:url("/media/kdmedia/images/page-headers/campus-map.jpg");'>
+    <h1>Campus Map</h1>
+  	<p>Use the filters below to explore campus landmarks, academic buildings, offices, and more.</p>
+</div>
+
+<div class="cta-section hidden-sm hidden-md hidden-lg" data-sidebar-buttons-target>
+</div><div class="row">
+  <div class="col-xs-12">
+    <div class="map-filters"></div>
+    <img hidden style="width:100%;" src="" id="print_map"/>
+    <div class="map-container" style="width:100%; height:400px;">
+      <div style="height:100%; width:100%;" id="map"></div>
+    </div>
+  </div>
+</div>
+<script>
+    var filtering = 'true',
+        zoomSetting = 'true';
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN_8cXdIQwU6H33yOncn-W66y566dNDMY"></script>
+<script type="text/javascript" src="/media/kdmedia/js/kdg-google-maps.js"></script>
+<script type="text/javascript" src="/media/kdmedia/js/gmap.js"></script>
+<script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Trumbower Science Building',
+              category : 'Academic, Administrative',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Chemistry, Mathematics and Computer Science, Physics, and Lithgow Auditorium',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597413',
+              lng : '-75.510925'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'New Science Building',
+              category : 'Academic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Biology, Biochemistry, Ecology, Environmental Science, Neuroscience, and Altman Reading Room',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597202',
+              lng : '-75.511517'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Seegers Union',
+              category : 'Administrative, Dining, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Academic Resource Center, \'Berg Bookshop, Career Center, Dining Services, Java Joe\'s, Wood Dining Commons, Red Door Cafe, and more!',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596889',
+              lng : '-75.511342'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Haas College Center ',
+              category : 'Administrative',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Admissions, Alumni Relations, Controller/Treasurer, Deans, Development, Financial Aid, HR, President, Provost, Purchasing, Registrar',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597612',
+              lng : '-75.510107'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Ettinger Hall',
+              category : 'Academic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Accounting, Business, Economics, Finance, Languages, Literatures and Cultures, History, Information/Technology Media Services, Political Science',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597780',
+              lng : '-75.509409'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Moyer Hall',
+              category : 'Academic, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Education, Institute for Jewish-Christian Understanding,  Philosophy, Psychology, Religion Studies',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597855',
+              lng : '-75.508694'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Egner Memorial Chapel',
+              category : 'Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Egner Memorial Chapel',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597430',
+              lng : '-75.508390'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Gabriel House',
+              category : 'Academic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Muhlenberg Summer Study, The Wescoe School of Muhlenberg College',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596905',
+              lng : '-75.509440'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Robertson Hall',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.595492',
+              lng : '-75.511700'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'South Hall',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.595398',
+              lng : '-75.511133'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Prosser Hall',
+              category : 'Administrative, Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence, Residential Services, Campus Safety and Security',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596292',
+              lng : ' -75.512733'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Walz Hall',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596769',
+              lng : '-75.513266'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Shankweiler Building and Trexler Tower',
+              category : 'Academic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Biology, Chemistry, Greenhouse, Research Facilities, Acopian Center (Orinthology)',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597113',
+              lng : ' -75.511447'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Trexler Library',
+              category : 'Academic, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'AT&T Information Commons, Fulford Room, Muhlenberg Room, Writing Center',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596407',
+              lng : '-75.508460'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Baker Center for the Arts',
+              category : 'Academic, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Art, English, Film Studies, Martin Art Gallery, Music, Paul C. Empie Theatre, Recital Hall',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596107',
+              lng : '-75.509697'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Trexler Pavilion for Theatre & Dance',
+              category : 'Academic, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Dorothy Hess Baker Theatre, Theatre & Dance, Studio Theatre and Dance Studios',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596032',
+              lng : '-75.510547'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Benfer Hall',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.595549',
+              lng : '-75.510371'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Brown Hall',
+              category : 'Academic, Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence, Brown Hall Dance Studio ',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596873',
+              lng : '-75.512864'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Taylor Hall',
+              category : 'Academic, Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence, Lower Level Classrooms',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597378',
+              lng : '-75.512593'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Walson Hall ',
+              category : 'Academic, Administrative, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'WMUH, MBC, Media & Communication',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597560',
+              lng : ' -75.511763'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Services Building',
+              category : 'Administrative',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Mail Room, Plant Operations, Print Shop',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598274',
+              lng : '-75.510776'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Scotty Wood Stadium/ Marino Field',
+              category : 'Athletic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Synthetic Field, All-Weather Track',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598686',
+              lng : '-75.511171'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Practice Field',
+              category : 'Athletic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : '',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598204',
+              lng : '-75.512737'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Soccer Field',
+              category : 'Athletic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : '',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597961',
+              lng : '-75.513604'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Life Sports Center/ Brueckner Wing',
+              category : 'Administrative, Athletic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Alumni Pool, Athletics, Counseling, Development Services, Dietrich Field House, Fitness Center, Heffer Health Services Suite, Indoor Track, and more',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598995',
+              lng : '-75.509506'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Alumni Court & Outdoor Basketball',
+              category : 'Athletic',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : '',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598504',
+              lng : '-75.509153'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Martin Luther Hall',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence, The Underground',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599048',
+              lng : '-75.508489'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'East Hall',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residence',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598474',
+              lng : '-75.508203'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Anthropology & Sociology',
+              category : 'Academic, Administrative',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Anthropology & Sociology House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597280',
+              lng : '-75.505950'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : ' Hoffman House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : '',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597970',
+              lng : '-75.506837'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'The Leffell Center for Jewish Student Life',
+              category : 'Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : '',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597249',
+              lng : '-75.506072'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Multicultural Center/ Study Abroad',
+              category : 'Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : '',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597158',
+              lng : '-75.506489'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Tennis & Volleyball Courts',
+              category : 'Academic, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Tennis & Beach Volleyball',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596787',
+              lng : '-75.505112'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Rehearsal House',
+              category : 'Academic, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Music, Theatre, and Dance, Trexler Amphitheatre',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596057',
+              lng : '-75.506567'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'The Village Residences',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residences',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596534',
+              lng : '-75.506033'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'The Village Laundry & Common Room',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Common areas for The Village residents',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596605',
+              lng : '-75.506934'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'The Hillside House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'The Hillside House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.596255',
+              lng : '-75.507171'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Sigma Phi Epsilon House',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Greek Life',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.595823',
+              lng : '-75.507709'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : ' Alpha Tau Omega',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Greek Life',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597019',
+              lng : '-75.506960'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Public Relations',
+              category : 'Administrative',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Public Relations Department',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597435',
+              lng : '-75.505413'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Residence Hall',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Student Residences',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598052',
+              lng : '-75.505171'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Alpha Chi Omega',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Greek Life',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597955',
+              lng : '-75.505485'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Phi Sigma Sigma',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Greek Life',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597910',
+              lng : '-75.505729'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Phi Mu',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Greek Life',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598724',
+              lng : '-75.505429'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Delta Zeta',
+              category : 'Housing, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Greek Life',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598566',
+              lng : '-75.505315'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'President\'s House',
+              category : 'Administrative',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'President\'s House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598794',
+              lng : '-75.506048'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Muhlenberg Independent Living Experience',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599573',
+              lng : '-75.510772'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'Newman Center',
+              category : 'Administrative, Student Life',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Catholic Chaplaincy',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599832',
+              lng : '-75.509856'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Muhlenberg Independent Living Experience',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.600081',
+              lng : '-75.508875'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'Muhlenberg Independent Living Experience',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.600373',
+              lng : '-75.507949'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.600031',
+              lng : '-75.507783'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599921',
+              lng : '-75.507703'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599689',
+              lng : '-75.507596'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599559',
+              lng : '-75.507551'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599064',
+              lng : ' -75.507432'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.599105',
+              lng : '-75.506949'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598787',
+              lng : '-75.506594'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598647',
+              lng : '-75.504776'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598509',
+              lng : '-75.504751'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.600503',
+              lng : '-75.504503'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598630',
+              lng : '-75.504268'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598325',
+              lng : '-75.504214'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.598247',
+              lng : '-75.504399'
+          };
+      pins.push(pin);
+    })();
+</script><script>
+    (function() {
+      var infoWindowOption = 'true',
+          pin = {
+              title : 'M.I.L.E House',
+              category : 'Housing',
+              show : true,
+              infoWindowSetting : (infoWindowOption == 'true') ? true : false,
+              infoDescription : 'M.I.L.E House',
+              pinImage : '/media/kdmedia/images/red-pin.png',
+              lat : '40.597722',
+              lng : '-75.504090'
+          };
+      pins.push(pin);
+    })();
+</script>	
+<hr>
+<div hidden data-sidebar-buttons>
+         
+         
+         <div  class='btn primary-btn'>       
+              <a href="/visit/">Visit</a>
+         </div>
+ 
+  <div class='btn secondary-btn'><a href="/academics/">Academics</a></div>
+  
+  
+  
+    
+                              
+    		 
+</div>         
+
+
+<div hidden data-sidebar-contact-info>
+    <div class="contact-box">
+        <!--If applicable, Muhl can add a contact box for which ever department-->
+       
+        
+   
+        
+  
+        
+      
+      <a class="bold text-link" href="mailto:"></a>
+
+ 
+      
+      
+    
+
+ 
+
+      </div>
+</div>
+	
+<h2>Additional Information</h2><div class="additional-links"><br/>
+<ul>
+<li><a href="https://www.muhlenberg.edu/media/contentassets/pdf/about/PrintCampusMap.pdf">Printable Map</a></li>
+<li><a href="https://www.muhlenberg.edu/main/aboutus/directions-to-muhlenberg/">Directions to Muhlenberg</a></li>
+<li><a href="https://www.muhlenberg.edu/main/aboutus/tour/restaurant.html">Area Restaurants</a></li>
+<li><a href="https://www.muhlenberg.edu/main/aboutus/about-the-region/">The Lehigh Valley and Beyond</a></li>
+</ul>
+</div>
+
+      </div>
+      <div class="col-lg-3 col-sm-4 col-xs-12">
+          <div class="cta-section hidden-xs" data-sidebar-buttons-target></div>
+          <!-- navigation object : About Us Page Sidebar --><div class="sidebar-links">
+          <!--Muhl can add up to three sidebar sections-->
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <!--Link section-->
+             
+            <div class="panel panel-default">
+              <a data-toggle="collapse" data-parent="#accordion" href="#get-to-know" aria-expanded="true" aria-controls="get-to-know">
+              	<div class="panel-heading" role="tab" id="headingOne">
+                
+                  <h3 class="panel-title pull-left">
+                      Get to Know Us
+                  </h3>
+                  <h3 class="panel-title pull-right"><span class="fa fa-angle-up"></span></h3>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+              <div id="get-to-know" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <div class="side-links">
+                      <ul>
+<li><a href="http://muhlenberg.edu/main/aboutus/mission.html">Mission Statement</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/muhlenberg-at-a-glance/">Muhlenberg at a Glance</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/campus-map/">Campus Map</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/directions-to-muhlenberg/">Directions</a></li>
+<li><a href="http://muhlenberg.edu/main/admissions/campusdayvisitprogram/">Campus Day Visit</a></li>
+<li><a href="http://muhlenberg.edu/main/admissions/types-of-visits/">Types of Visits</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/virtual-tour/">Virtual Tour</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/events/">Conference &amp; Event Services</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/about-the-region/">About the Region</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/cfe/">Center for Ethics</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/fct/">Faculty Center for Teaching</a></li>
+<li><a href="http://muhlenberg.edu/cultural/ijcu/">Institute for Jewish-Christian Understanding</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/polling/">Institute of Public Opinion</a></li>
+<li><a href="http://muhlenberg.edu/main/campuslife/multicultural/">Multicultural Life</a></li>
+<li><a href="http://muhlenberg.edu/main/aboutus/hr/jobs.html">Employment</a></li>
+</ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Link section-->
+
+            <!--Link section-->
+
+		<script type="text/javascript">
+          
+		    
+          var secondAccordian= '<ul>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/collegeoffices.html\">College Offices</a></li>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/president/\">Office of the President</a></li>\n<li><a href=\"http://muhlenberg.edu/main/campuslife/religiouslife/\">Chaplain</a></li>\n<li></li>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/provost/\">Provost</a></li>\n<li><a href=\"http://muhlenberg.edu/aboutus/treasurer/\">Chief Business Officer &amp; Treasurer</a></li>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/deanst/\">Dean of Students&nbsp;</a></li>\n<li><a href=\"http://muhlenberg.edu/main/admissions/\">Dean of Admissions</a></li>\n<li><a href=\"http://www.muhlenbergconnect.com\">Advancement</a></li>\n</ul>';
+	
+          
+          var secondAccordianPanel='<div class="panel panel-default"><div class="panel-heading" role="tab" id="headingTwo"><a data-toggle="collapse" data-parent="#accordion" href="#how-to-apply" aria-expanded="true" aria-controls="how-to-apply"><h3 class="panel-title pull-left">Administration</h3><h3 class="panel-title pull-right"><span class="fa fa-angle-down"></span></h3><div class="clearfix"></div></a></div><div id="how-to-apply" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"><div class="panel-body"><ul class="side-links"><ul>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/collegeoffices.html\">College Offices</a></li>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/president/\">Office of the President</a></li>\n<li><a href=\"http://muhlenberg.edu/main/campuslife/religiouslife/\">Chaplain</a></li>\n<li><a href=\"/main/aboutus/communications/\">Communications</a></li>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/provost/\">Provost</a></li>\n<li><a href=\"http://muhlenberg.edu/aboutus/treasurer/\">Chief Business Officer &amp; Treasurer</a></li>\n<li><a href=\"http://muhlenberg.edu/main/aboutus/deanst/\">Dean of Students&nbsp;</a></li>\n<li><a href=\"http://muhlenberg.edu/main/admissions/\">Dean of Admissions</a></li>\n<li><a href=\"http://www.muhlenbergconnect.com\">Advancement</a></li>\n</ul></ul></div></div></div>';
+
+		    if (secondAccordian) {
+			 document.getElementById('accordion').innerHTML +=secondAccordianPanel;
+                    }
+		
+ 		</script>
+
+
+
+   
+              <!--End Link section-->
+
+
+        
+              <!--Link section-->
+ 
+		
+		<script type="text/javascript">
+          
+		    
+          var thirdAccordian= '';
+	
+          
+  var thirdAccordianPanel='<div class="panel panel-default"><div class="panel-heading" role="tab" id="headingThree"><a data-toggle="collapse" data-parent="#accordion" href="#paying-for-muhlenberg" aria-expanded="true" aria-controls="paying-for-muhlenberg"><h3 class="panel-title pull-left"></h3><h3 class="panel-title pull-right"><span class="fa fa-angle-down"></span></h3><div class="clearfix"></div></a></div><div id="paying-for-muhlenberg" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree"><div class="panel-body"><ul class="side-links"></ul></div></div></div>';
+
+
+		    if (thirdAccordian) {
+			 document.getElementById('accordion').innerHTML +=thirdAccordianPanel;
+                    }
+		
+ 		</script>
+            <!--End Link section-->
+            
+       
+              <!--Link section-->
+ 
+		
+       <script type="text/javascript">
+		    
+          var fourAccordian='';
+	
+          
+  var fourAccordianPanel='<div class="panel panel-default"><div class="panel-heading" role="tab" id="headingfour"><a data-toggle="collapse" data-parent="#accordion" href="#resources" aria-expanded="true" aria-controls="resources"><h3 class="panel-title pull-left"></h3><h3 class="panel-title pull-right"><span class="fa fa-angle-down"></span></h3><div class="clearfix"></div></a></div><div id="resources" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour"><div class="panel-body"><ul class="side-links"></ul></div></div></div>';
+
+
+		    if (fourAccordian) {
+			 document.getElementById('accordion').innerHTML +=fourAccordianPanel;
+                    }
+		
+		
+  </script>
+            
+            <!--End Link section-->
+            
+          </div>
+          <!--/end accordion-->
+        </div><!--Sidebar links-->
+          <div class="contact-box" data-sidebar-contact-target></div>
+      </div>
+  
+      <a kdg-scroll-to="body, html" kdg-scroll-to-dur="500" class="hidden-sm hidden-md hidden-lg">
+        <div class="back-to-top">
+          <h5><span class="fa fa-chevron-up"></span></h5>
+        </div>
+      </a>
+    </div>
+  </div>
+</div><!--/container-->
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <a href="http://muhlenberg.edu"><img src="/media/kdmedia/images/footer-logo.png" alt="Muhlenberg College"></a>
+      </div>
+
+      <div class="footer-contact">
+        <p><br/>2400 Chew St., Allentown, PA 18104-5586 | 484-664-3100 <br/>
+          &copy; Muhlenberg College <script type="text/javascript">var d = new Date();
+           document.write( d.getFullYear());</script> | <a target="_blank" href="http://muhlenberg.edu/main/aboutus/oit/about/policies_procedures/webprivacystatement/">Web Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--JS Goes Here-->
+  <script type="text/javascript" src="/media/kdmedia/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/media/kdmedia/js/kdg-ui.js"></script>
+  <script type="text/javascript" src="/media/kdmedia/js/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script>
+  var largeGrid = $('body, html').find('.grid-sizer');
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'masonry',
+    percentPosition: (largeGrid.length) ? true : false,
+    masonry: {
+  		columnWidth: (largeGrid.length) ? '.grid-sizer' : null
+    }
+  });
+</script>
+
+</body>
+
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WDV75R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDV75R');</script>
+<!-- End Google Tag Manager -->
+
+</html>

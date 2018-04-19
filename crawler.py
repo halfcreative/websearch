@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
+import os
 import re
 
 
@@ -174,7 +175,12 @@ class crawler():
         print(self.nameslist)
     #Makes page with the order visited, the number of links relative and absolute and the content of the html
     def makepage(self,num,site,relative,absolute,content):
-        title = self.baseurlbegin + "page#" + str(num) + ".txt"
+        if not os.path.exists(self.baseurlbegin):
+            os.makedirs(self.baseurlbegin)
+            print("Folder did not exist making Folder")
+        else:
+            pass
+        title = self.baseurlbegin + "/" + self.baseurlbegin + "page#" + str(num) + ".txt"
         page = open(title,'w+')
         self.filesmade +=1
         page.write("URL:{0}\nNumber of Relative Links:{1}\nNumber of Absolute Links:{2}\n".format(site,relative,absolute))
@@ -182,6 +188,6 @@ class crawler():
         page.close()
 #main function to test
 def main():
-    webby = crawler()
-    webby.crawl("http://www.muhlenberg.edu",100)
+        webby = crawler()
+        webby.crawl("http://www.muhlenberg.edu",100)
 main()
