@@ -117,7 +117,7 @@ class crawler():
                 pagereq = urlopen(req)
             except HTTPError as e:
                 log("Page {0} returned error {1}".format(visiting,e))
-                self.visited.append(visiting)
+                self.visited[visiting] = 1
             else:
                 #Page Request successful! read the page request as bytes
                 bytepage = pagereq.read()
