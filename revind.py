@@ -4,6 +4,7 @@ class r_index:
         def __init__(self, dom):
                self.d = {}
                self.domain = dom
+               self.construct()
 
         def construct(self):
             if not os.path.exists(self.domain):
@@ -30,10 +31,3 @@ class r_index:
                 for doc in self.d[word]:
                     out += '\tdoc: {0} count: {1}\n'.format(doc, self.d[word][doc])
             return out
-        
-def main():
-    ri = r_index('muhlenberg')
-    ri.construct()
-    strsss = ri.toString()
-    print(strsss)
-main()       
