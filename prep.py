@@ -23,7 +23,7 @@ def prep(str):
 
     return words
 
-def stem(word):
+def stem(word): #still 100% trash, but no need for premature optimizaition
     #suffix-stripping:
     word = re.sub(r's$', '', word)
     word = re.sub(r'ed', '', word)
