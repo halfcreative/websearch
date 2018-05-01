@@ -7,6 +7,7 @@ stem = True
 swList = open('sw.txt', 'r').read()
 
 def prep(str):
+    str = re.sub(r'[^\w\'\s]', '', str)
     words = str.lower().split()
     
     if swFilter:
@@ -30,11 +31,3 @@ def stem(word):
     word = re.sub(r'ing$', '', word)
     word = re.sub(r"\'\w*$", '', word) #an apostrophe and anything after it
     return word
-    
-
-def main():
-    strIn = input('enter some stuff:\t')
-    strOut = prep(strIn)
-    print(' '.join(strOut))
-    
-main()
