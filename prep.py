@@ -34,7 +34,7 @@ def stem(word):
 
 def main():
     strIn = input('enter some stuff:\t')
-    oot = prep(strIn)
-    print(' '.join(oot))
+    strOut = prep(strIn)
+    print(' '.join(strOut))
     
 main()
