@@ -1,15 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 25 11:39:23 2018
-
-@author: nate
-"""
-
 #! /usr/bin/python3
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
-from bs4 import BeautifulSoup
 import os
 import re
 
@@ -65,7 +56,7 @@ import re
 #######################################
 #             Debugging               #
 #######################################
-DEBUG = False
+DEBUG = True
 
 def log(n):
     if DEBUG == True:
@@ -83,15 +74,17 @@ class crawler():
         self.linksfound = 0
         self.rellinksfound = 0
         self.abslinksfound = 0
+        self.phones = []
+        self.nameslist = [] # list of names with titles found (ie Dr. Mr. Mrs. John Smith)
         return
     #Crawl will have the crawler find every link on the page, store the ones not visited in a list, then visit each page on the domain
     def crawl(self,site,limit=0):
         if limit==0:
             limited = False
-            log("Crawling Full site")
+            print("Crawling Full site")
         else:
             limited = True
-            log("Crawing {0} pages".format(limit))
+            print("Crawing {0} pages".format(limit))
         #Sets a baseurl that can be compared to and adds the first URL on the list of places to visit
         self.baseurl = site
         self.tovisit.append(site)
@@ -108,6 +101,10 @@ class crawler():
         regex3 = re.compile(r'https?:\/\/(www\.)?'+self.baseurlbegin+'\.'+self.baseurlend+'(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
         #regex3_5 - absolute links to the baseurl
         regex3_5 = re.compile(r'https?:\/\/(www\.)?(.+)(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
+#        #regex4 - Phone Numbers
+#        regex4 = re.compile(r'\([0-9]{3}\)|[0-9]{3}[-,.\s]?[0-9]{3}[-,.\s]?[0-9]{4}')
+#        #regex5 - First and Last names w/ Title (?)
+#        regex5 = re.compile(r'(Dr\.|Mr\.|Mrs\.|Ms\.).?([A-Z]\w+)\s([A-Z]\w+).(.+Professor)?')
         #Heres where the actual crawiling starts!
         while len(self.tovisit) > 0:
             visiting = self.tovisit.pop(0)
@@ -131,6 +128,16 @@ class crawler():
                     log("link {0} returned {1} : probably because its not a page but a pdf or something".format(visiting,err))
                 else:
                     #THE PAGE WAS DECODED!
+#                    names = regex5.findall(page)
+#                    for name in names:
+#                        tmpname = name[0] + name[1] + " " + name[2]
+#                        if tmpname not in self.nameslist:
+#                            self.nameslist.append(tmpname)
+#                    #Find Phone numbers
+#                    phone_nums = regex4.findall(page)
+#                    for number in phone_nums:
+#                        if not any(number in records for records in self.phones):
+#                            self.phones.append((number,visiting))
                     #Find Links:
                     #create initial list of links and make a filter list of all the links with slash
                     links = regex1.findall(page)
@@ -138,12 +145,11 @@ class crawler():
                     linksabs = [m.group(2) for m in (regex3.match(a) for a in links) if m] #creates a list of the absolute links for this domain
                     alllinksabs = [m.group(0) for m in (regex3_5.match(a) for a in links) if m] #creates a list of all absolute links
                     #Make Page and Add to visit:
-                    soup = BeautifulSoup(page, 'html.parser')
-                    self.makepage(self.filesmade,visiting,len(linksrel),len(alllinksabs),soup.get_text())
+                    self.makepage(self.filesmade,visiting,len(linksrel),len(alllinksabs),page)
                     self.visited.update(visiting=1)
                     #End the program if the number of files made would exceed the limit
                     if limited and self.filesmade >= limit:
-                        log("Reached specified limit:{0}".format(limit))
+                        print("Reached specified limit:{0}".format(limit))
                         break
                     #Continue to search for links
                     for i in range(len(linksrel)):     
@@ -161,22 +167,21 @@ class crawler():
                             log("adding {0} to visit".format(check))
                             self.linksfound +=1
                             self.abslinksfound += 1
-    #print("Finished Crawling\nCrawler found and recorded {0} pages on {1}".format(self.filesmade,site))
+        print("Finished Crawling\nCrawler found and recorded {0} pages on {1}".format(self.filesmade,site))
+        print("There were {0} unique links, {1} of them relative and {2} of them absolute".format(self.linksfound,self.rellinksfound,self.abslinksfound))
+#        print("Found {0} phone numbers".format(len(self.phones)))
+#        print(self.phones)
+#        print("Found {0} names with titles".format(len(self.nameslist)))
+#        print(self.nameslist)
     #Makes page with the order visited, the number of links relative and absolute and the content of the html
     def makepage(self,num,site,relative,absolute,content):
         if not os.path.exists(self.baseurlbegin):
             os.makedirs(self.baseurlbegin)
-            log("Folder did not exist making Folder")
+            print("Folder did not exist making Folder")
         else:
             pass
         title = self.baseurlbegin + "/" + self.baseurlbegin + "page#" + str(num) + ".txt"
         page = open(title,'w+')
         self.filesmade +=1
-        page.write("URL:{0}\nNumber of Relative Links:{1}\nNumber of Absolute Links:{2}\n".format(site,relative,absolute))
         page.write(content)
         page.close()
-#main function to test
-def main():
-        webby = crawler()
-        webby.crawl("http://www.muhlenberg.edu",100)
-main()
