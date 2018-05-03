@@ -187,7 +187,7 @@ class crawler():
         page.write(content)
         page.close()
 #main function to test
-def main():
-        webby = crawler()
-        webby.crawl("http://www.muhlenberg.edu",100)
-main()
+#def main():
+#    webby = crawler()
+#    webby.crawl("http://www.muhlenberg.edu",100)
+#main()
