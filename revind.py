@@ -32,6 +32,7 @@ class r_index:
                self.domain = dom
                self.totaldocs = 0
                self.rind = {}
+               self.rind['<total>'] = 0
                self.construct()
                self.finalize()
 
@@ -41,6 +42,7 @@ class r_index:
             else:
                 for file in os.listdir(self.domain):
                     self.scan_doc(file)
+
                     
         def scan_doc(self, doc):
             self.totaldocs += 1
@@ -51,25 +53,31 @@ class r_index:
                 if w not in self.d.keys():
                     self.d[w] = {}
                     self.d[w]['<total>'] = 1
-                    self.d[w]['<df>'] = {}
-                else:    
-                    self.d[w]['<total>'] += 1
-                
+                    self.d[w]['<df>'] = 1
+                    self.d[w][doc] = 1
                 if doc not in self.d[w].keys():
                     self.d[w][doc] = 1
+                    self.d[w]['<total>'] += 1
                     self.d[w]['<df>'] += 1
                 else:
-                    self.d[w][doc] += 1
+                    self.d[w][doc] +=1
+                    self.d[w]['<total>'] += 1
+
                                 
         def finalize(self): #does the math, then stores the index as a .pkl file
             for w in self.d.keys():
-               idf = math.log10(self.totaldocs/self.d[w]['<df>'])
-               for doc in self.d[w]:
-                   self.rind[w][doc] = 0
-                   tf = self.d[w][doc]
-                   self.rind[w][doc] = tf*idf
-            with open('dicts/'+ self.domain + '.pkl', 'wb') as f:
-                pickle.dump(self.rind, f, pickle.HIGHEST_PROTOCOL)
+                idf = math.log10(self.totaldocs/self.d[w]['<df>'])
+                for doc in self.d[w]:
+                    if w not in self.rind.keys():
+                        self.rind[w] = {}
+                    self.rind[w][doc] = 0
+                    tf = self.d[w][doc]
+                    self.rind[w][doc] = tf*idf
+                self.rind[w]['<df>'] = self.d[w]['<df>']
+                self.rind['<total>'] = self.totaldocs
+                
+                with open('dicts/'+ self.domain + '.pkl', 'wb') as f:
+                    pickle.dump(self.rind, f, pickle.HIGHEST_PROTOCOL)
 
         def toString(self):
             out = 'WORDS:\n'
