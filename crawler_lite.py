@@ -105,7 +105,7 @@ class crawler():
 #        regex4 = re.compile(r'\([0-9]{3}\)|[0-9]{3}[-,.\s]?[0-9]{3}[-,.\s]?[0-9]{4}')
 #        #regex5 - First and Last names w/ Title (?)
 #        regex5 = re.compile(r'(Dr\.|Mr\.|Mrs\.|Ms\.).?([A-Z]\w+)\s([A-Z]\w+).(.+Professor)?')
-        #Heres where the actual crawiling starts!
+    #Heres where the actual crawiling starts!
         while len(self.tovisit) > 0:
             visiting = self.tovisit.pop(0)
             log("Going to {0}".format(visiting))
