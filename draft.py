@@ -6,7 +6,7 @@ Created on Thu Apr 19 13:28:25 2018
 @author: nate
 """
 from revind import r_index
-from crawler import crawler
+from crawler_lite import crawler
 import collections
 import math
 import numpy as np
@@ -63,19 +63,28 @@ def retrieve(q_words, revind):
     q_vec = []
     relevant_docs = []  #harvest all docs that contain any q_words
     for qw in q_words:
-        for d in revind[qw]:
-            if revind[qw]!= 0.0 and d != '<df>' and d != '<total>':
-                relevant_docs.append(d)
+        if revind.get(qw) != None:
+            for d in revind[qw]:
+                if revind[qw]!= 0.0 and d != '<df>' and d != '<total>':
+                    relevant_docs.append(d)
             
     doclist = list(set(relevant_docs))
     docveclist = []
+    urllist =[]
     for rd in doclist:    #create document vectors
+        urllist.append(revind['<urls>'][rd])
         vec = []
         for i in range(len(q_words)):
-            if revind[q_words[i]].get(rd) == None:
-                weight = 0.0
-            else:
-                weight = revind[q_words[i]][rd]
+            if revind.get(q_words[i]) == None:
+                revind[q_words[i]] = {}
+                revind[q_words[i]][rd] = 0.0
+                revind[q_words[i]]['<df>'] = 0.0
+                revind[q_words[i]]['<total>'] = 0.0
+            elif revind[q_words[i]].get(rd) == None:
+                revind[q_words[i]][rd] = 0.0
+                revind[q_words[i]]['<df>'] = 0.0
+                revind[q_words[i]]['<total>'] = 0.0
+            weight = revind[q_words[i]][rd]
             vec.append(weight) # sets the vector to the tf-idf weights as stored in the revese index
         docveclist.append(vec)
     
@@ -92,11 +101,13 @@ def retrieve(q_words, revind):
     cos_similarity = []
     for h in range(len(docveclist)):
         cos_similarity.append(cos_sim(q_vec, docveclist[h]))
-        
-    results_w_score = list(zip(doclist,cos_similarity))
+    results_w_score = list(zip(urllist,cos_similarity))
     results_w_score.sort(key = operator.itemgetter(1), reverse = True)
+    
+    print('\n\nR E S U L T S:\n')
     for r in range(len(results_w_score)):
-        print('{0}'.format(results_w_score[r]))
+        print('\t{0}\n'.format(results_w_score[r][0][11:]))
+        
 def cos_sim(a,b):
     dp = np.dot(a,b)
     norm_a = np.linalg.norm(a)

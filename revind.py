@@ -33,6 +33,7 @@ class r_index:
                self.totaldocs = 0.0
                self.rind = {}
                self.rind['<total>'] = 0.0
+               self.doc_2_url = {}
                self.construct()
                self.finalize()
 
@@ -47,6 +48,9 @@ class r_index:
         def scan_doc(self, doc):
             self.totaldocs += 1
             body = open(self.domain+'/'+doc, 'r').read()
+            url = re.search(r'(http:.*)\<', body).group(1)
+            print('scanning {0}'.format(url))
+            self.doc_2_url[doc] = url
             text = text_from_html(body)
             words = prep.prep(text)
             for w in words:
@@ -75,6 +79,7 @@ class r_index:
                     self.rind[w][doc] = tf*idf
                 self.rind[w]['<df>'] = self.d[w]['<df>']
                 self.rind['<total>'] = self.totaldocs
+                self.rind['<urls>'] = self.doc_2_url
                 
                 with open('dicts/'+ self.domain + '.pkl', 'wb') as f:
                     pickle.dump(self.rind, f, pickle.HIGHEST_PROTOCOL)
