@@ -5,6 +5,8 @@ from bs4.element import Comment
 import pickle
 import prep
 import math
+import progressbar
+import fnmatch
 
 #ripped straight from stackoverflow, 0 shame, 
 def tag_visible(element):
@@ -33,24 +35,27 @@ class r_index:
                self.totaldocs = 0.0
                self.rind = {}
                self.rind['<total>'] = 0.0
-               self.doc_2_url = {}
                self.construct()
                self.finalize()
 
         def construct(self):
+            pb = progressbar.Progressbar('scanning', len(os.listdir(self.domain)), 60, 'u')
             if not os.path.exists(self.domain):
                 print('domain folder not found')
             else:
                 for file in os.listdir(self.domain):
-                    self.scan_doc(file)
+                    pb.yep()
+                    if fnmatch.fnmatch(file, 'muhlenbergpage#9995.txt'):
+                        break
+                    else:
+                        self.scan_doc(file)
+            print('done!')
+                        
 
                     
         def scan_doc(self, doc):
             self.totaldocs += 1
             body = open(self.domain+'/'+doc, 'r').read()
-            url = re.search(r'(http:.*)\<', body).group(1)
-            print('scanning {0}'.format(url))
-            self.doc_2_url[doc] = url
             text = text_from_html(body)
             words = prep.prep(text)
             for w in words:
@@ -59,7 +64,7 @@ class r_index:
                     self.d[w]['<total>'] = 1.0
                     self.d[w]['<df>'] = 1.0
                     self.d[w][doc] = 1.0
-                if doc not in self.d[w].keys():
+                elif doc not in self.d[w].keys():
                     self.d[w][doc] = 1.0
                     self.d[w]['<total>'] += 1.0
                     self.d[w]['<df>'] += 1.0
@@ -71,7 +76,12 @@ class r_index:
         def finalize(self): #does the math, then stores the index as a .pkl file
             for w in self.d.keys():
                 idf = math.log10(self.totaldocs/self.d[w]['<df>'])
+                count = 0
                 for doc in self.d[w]:
+                    count += 1
+                    print()
+                    if count%100 == 0:
+                        print(count)
                     if w not in self.rind.keys():
                         self.rind[w] = {}
                     self.rind[w][doc] = 0.0
@@ -79,7 +89,6 @@ class r_index:
                     self.rind[w][doc] = tf*idf
                 self.rind[w]['<df>'] = self.d[w]['<df>']
                 self.rind['<total>'] = self.totaldocs
-                self.rind['<urls>'] = self.doc_2_url
                 
                 with open('dicts/'+ self.domain + '.pkl', 'wb') as f:
                     pickle.dump(self.rind, f, pickle.HIGHEST_PROTOCOL)
