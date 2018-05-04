@@ -30,9 +30,9 @@ class r_index:
         def __init__(self, dom):
                self.d = {}
                self.domain = dom
-               self.totaldocs = 0
+               self.totaldocs = 0.0
                self.rind = {}
-               self.rind['<total>'] = 0
+               self.rind['<total>'] = 0.0
                self.construct()
                self.finalize()
 
@@ -52,16 +52,16 @@ class r_index:
             for w in words:
                 if w not in self.d.keys():
                     self.d[w] = {}
-                    self.d[w]['<total>'] = 1
-                    self.d[w]['<df>'] = 1
-                    self.d[w][doc] = 1
+                    self.d[w]['<total>'] = 1.0
+                    self.d[w]['<df>'] = 1.0
+                    self.d[w][doc] = 1.0
                 if doc not in self.d[w].keys():
-                    self.d[w][doc] = 1
-                    self.d[w]['<total>'] += 1
-                    self.d[w]['<df>'] += 1
+                    self.d[w][doc] = 1.0
+                    self.d[w]['<total>'] += 1.0
+                    self.d[w]['<df>'] += 1.0
                 else:
-                    self.d[w][doc] +=1
-                    self.d[w]['<total>'] += 1
+                    self.d[w][doc] +=1.0
+                    self.d[w]['<total>'] += 1.0
 
                                 
         def finalize(self): #does the math, then stores the index as a .pkl file
@@ -70,7 +70,7 @@ class r_index:
                 for doc in self.d[w]:
                     if w not in self.rind.keys():
                         self.rind[w] = {}
-                    self.rind[w][doc] = 0
+                    self.rind[w][doc] = 0.0
                     tf = self.d[w][doc]
                     self.rind[w][doc] = tf*idf
                 self.rind[w]['<df>'] = self.d[w]['<df>']
