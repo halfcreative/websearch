@@ -9,8 +9,10 @@ from revind import r_index
 from crawler import crawler
 import collections
 import math
+import numpy as np
 import pickle
 import prep
+import operator
 
 def main():
     # load GUI, w input for domain and search term
@@ -33,7 +35,6 @@ def main():
                     print('creating reverse index...')
                     ri = r_index(domain)
                     ri.make_file()
-                    print(ri.toString())
                     if 'javascript' in ri.d.keys():
                         print('its not filtering out javascript yet')
                     else:
@@ -59,13 +60,11 @@ def main():
     retrieve(wordsin, dom_ind)
     
 def retrieve(q_words, revind):
-    print(revind['<total>'])
     q_vec = []
     relevant_docs = []  #harvest all docs that contain any q_words
     for qw in q_words:
         for d in revind[qw]:
-            print("{0} : {1}".format(d,revind[qw][d]))
-            if revind[qw]!= 0.0:
+            if revind[qw]!= 0.0 and d != '<df>' and d != '<total>':
                 relevant_docs.append(d)
             
     doclist = list(set(relevant_docs))
@@ -81,18 +80,29 @@ def retrieve(q_words, revind):
         docveclist.append(vec)
     
     freq_info = collections.Counter(q_words)
-    max_freq = freq_info.most_common(1)[0][1]
-    for i in range(len(q_words)): #make query vectors
+    max_freq = freq_info.most_common(1)[0][1] #make query vectors
+    for i in range(len(q_words)): 
         freq_wq = freq_info[q_words[i]]
         if revind[q_words[i]]['<df>'] <= 0:
             q_vec.append(0.0)
         else:
             q_vec.append(freq_wq * max_freq *math.log10( revind['<total>']/revind[q_words[i]]['<df>'] ))
-        # freq of word in q / freq of most freq word in q *math.log10(total num of docs/# of docs w/ word)
+        
+    #compute cosine similarities
+    cos_similarity = []
+    for h in range(len(docveclist)):
+        cos_similarity.append(cos_sim(q_vec, docveclist[h]))
+        
+    results_w_score = list(zip(doclist,cos_similarity))
+    results_w_score.sort(key = operator.itemgetter(1), reverse = True)
+    for r in range(len(results_w_score)):
+        print('{0}'.format(results_w_score[r]))
+def cos_sim(a,b):
+    dp = np.dot(a,b)
+    norm_a = np.linalg.norm(a)
+    norm_b = np.linalg.norm(b)
+    return dp/(norm_a * norm_b)
         
             
-    print('query vector: {0}\ndocument vectors:'.format(q_vec))
-    for d in range(len(docveclist)):
-        print(docveclist[d])
-    print(q_vec)
+
 main()
