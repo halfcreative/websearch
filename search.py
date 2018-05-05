@@ -15,7 +15,7 @@ def retrieve(q_words, ri):
     q_vec = []
     relevant_docs = []  #harvest all docs that contain any q_words
     for qw in q_words:
-        if dict(ri.get(qw)) != None:    
+        if ri.get(qw) != None:    
             for d in ri[qw]:
                 if ri[qw] != 0.0 and d != '<df>' and d != '<total>':
                     relevant_docs.append(d)
