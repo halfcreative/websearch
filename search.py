@@ -59,7 +59,7 @@ def retrieve(q_words, ri):
     results_w_score.sort(key = operator.itemgetter(1), reverse = True)
     for r in range(len(results_w_score)):
          print('{0}'.format(results_w_score[r]))
- 
+    return results_w_score 
 def cos_sim(a,b):
     dp = np.dot(a,b)
     aM = np.linalg.norm(a)
