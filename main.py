@@ -58,10 +58,10 @@ class MainWindow(tk.Frame):
                     #crawled files dont exist: crawl!
                     crwl = crawler()
                     crwl.crawl(fullDomain,100)
-                    ri = r_index(baseurl)
+                    ri = r_index(baseurl).rind
                     search.retrieve(searchterms,ri)
                 else:
-                    ri = r_index(baseurl)
+                    ri = r_index(baseurl).rind
                     #Crawler files exist!
         search.retrieve(searchterms,ri)
                 
