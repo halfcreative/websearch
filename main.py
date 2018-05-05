@@ -27,8 +27,12 @@ class MainWindow(tk.Frame):
         self.searchtermsbox.pack()
         self.searchbutton = tk.Button(self,command = self.searchDom,text="Search!")
         self.searchbutton.pack()
+        
+        self.searchresults = tk.Listbox(self,bg='grey',width=75)
+        self.searchresults.pack()
 
     def searchDom(self):
+        self.searchresults.delete(0,'end')
         fullDomain = self.fullDomainbox.get()
         searchterms = self.searchtermsbox.get()
         if searchterms == '':
@@ -59,13 +63,26 @@ class MainWindow(tk.Frame):
                     crwl = crawler()
                     crwl.crawl(fullDomain,100)
                     ri = r_index(baseurl).rind
-                    search.retrieve(searchterms,ri)
+                    results = search.retrieve(searchterms,ri)
+                    if len(results)>5:
+                        for i in range(5):
+                            self.searchresults.insert(0,results[i][0])
+                    else:
+                        for result in results:
+                            self.searchresults.insert(0,result[0])
                 else:
                     ri = r_index(baseurl).rind
                     #Crawler files exist!
-        search.retrieve(searchterms,ri)
+        results = search.retrieve(searchterms,ri)
+        if len(results)>5:
+            for i in range(5):
+                self.searchresults.insert(0,results[i][0])
+        else:
+            for result in results:
+                self.searchresults.insert(0,result[0])
+
                 
 root = tk.Tk()
-root.geometry('300x400')
+root.geometry('600x900')
 MainWindow(root).pack()
 root.mainloop()
