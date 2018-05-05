@@ -55,7 +55,12 @@ class r_index:
                 return
             else:
                 self.totaldocs += 1
-                self.doc2url[doc] = re.search(r'URL:(.*)\<', body).group(1)
+                thing = re.search(r'URL:(.*)\<', body)
+                if thing == None:
+                    url = 'URL NOT FOUND'
+                else:
+                    url = thing.group(1)
+                self.doc2url[doc] = url
                 text = text_from_html(body)
                 words = prep.prep(text)
                 for w in words:
