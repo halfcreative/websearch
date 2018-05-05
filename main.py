@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import search
 from revind import r_index
 from crawler import crawler
 import re
@@ -38,6 +38,7 @@ class MainWindow(tk.Frame):
         if searchterms == '':
             print("no search term")
         else:
+            searchterms = prep.prep(searchterms)
             print("The button was pressed! Requesting a search for {0} on {1}".format(searchterms,fullDomain))
             #Have both a domain and a search term.
             #Check if folder for the domain exists
@@ -51,7 +52,7 @@ class MainWindow(tk.Frame):
             if not os.path.exists('dicts'):
                 os.makedirs('dicts')
             try:
-                open('dicts/{0}.pkt'.format(baseurl))
+                ri = open('dicts/{0}.pkt'.format(baseurl))
             except FileNotFoundError as e0:
                 #rev index doesnt exist, check for crawled files
                 try:
@@ -61,59 +62,14 @@ class MainWindow(tk.Frame):
                     crwl = crawler()
                     crwl.crawl(fullDomain,100)
                     ri = r_index(baseurl)
-                    ri.make_file()
                 else:
                     ri = r_index(baseurl)
-                    ri.make_file()
                     #Crawler files exist!
             else:
                 #Reverse Index found!
-                ri = r_index(baseurl)
-                ri.make_file()
+                retrieve(searchterms,ri)
                 
 root = tk.Tk()
 root.geometry('300x400')
 MainWindow(root).pack()
 root.mainloop()
-
-def main():
-    # load GUI, w input for domain and search term
-    # if domain is not on file, ask user if they'd like to make a file.
-    # if they would, crawl us a new mf database
-    
-    domain = input("What domain are we searchin?: ")
-    try:
-        open('dicts/{0}.pkl'.format(domain), 'r')
-    except FileNotFoundError as e0:
-        choice0 = input('reverse index file does not exist, make file? (y/n) ')
-        if choice0 == 'y':
-            try:
-                open('{0}/{0}page#0.txt'.format(domain), 'r')
-            except FileNotFoundError as e:
-                decide = input('data does not exist, make new folder? (y/n) ')
-                if decide == 'y':#make directory for this domain
-                    domaincrawl = crawler()
-                    domaincrawl.crawl('http://www.'+domain+'.edu',100)
-                    print('creating reverse index...')
-                    ri = r_index(domain)
-                    ri.make_file()
-                    if 'javascript' in ri.d.keys():
-                        print('its not filtering out javascript yet')
-                    else:
-                        print('no problem, ending program!')
-            else:
-                print('creating reverse index...')
-                ri = r_index(domain)
-                #print(ri.toString())
-                with open('dicts/' + domain + '.pkl', 'rb') as f:
-                    dom_ind = pickle.load(f)
-                if 'javascript' in ri.d.keys():
-                    print('its not filtering out javascript yet')
-                    
-        else: 
-            print('no worries, come back another time.')
-    else:
-        with open('dicts/' + domain + '.pkl', 'rb') as f:
-            dom_ind = pickle.load(f)
-        print('index loaded')
-
