@@ -102,9 +102,9 @@ class crawler():
         #regex3_5 - absolute links to the baseurl
         regex3_5 = re.compile(r'https?:\/\/(www\.)?(.+)(.+[^pdf|css|pptx?|docx?|png|jpeg|gif])$')
         #regex4 - Phone Numbers
-        regex4 = re.compile(r'\([0-9]{3}\)|[0-9]{3}[-,.\s]?[0-9]{3}[-,.\s]?[0-9]{4}')
+        #regex4 = re.compile(r'\([0-9]{3}\)|[0-9]{3}[-,.\s]?[0-9]{3}[-,.\s]?[0-9]{4}')
         #regex5 - First and Last names w/ Title (?)
-        regex5 = re.compile(r'(Dr\.|Mr\.|Mrs\.|Ms\.).?([A-Z]\w+)\s([A-Z]\w+).(.+Professor)?')
+        #regex5 = re.compile(r'(Dr\.|Mr\.|Mrs\.|Ms\.).?([A-Z]\w+)\s([A-Z]\w+).(.+Professor)?')
         #Heres where the actual crawiling starts!
         while len(self.tovisit) > 0:
             visiting = self.tovisit.pop(0)
@@ -128,24 +128,25 @@ class crawler():
                     log("link {0} returned {1} : probably because its not a page but a pdf or something".format(visiting,err))
                 else:
                     #THE PAGE WAS DECODED!
-                    names = regex5.findall(page)
-                    for name in names:
-                        tmpname = name[0] + name[1] + " " + name[2]
-                        if tmpname not in self.nameslist:
-                            self.nameslist.append(tmpname)
+                    #names = regex5.findall(page)
+                    #for name in names:
+                    #    tmpname = name[0] + name[1] + " " + name[2]
+                    #    if tmpname not in self.nameslist:
+                    #        self.nameslist.append(tmpname)
                     #Find Phone numbers
-                    phone_nums = regex4.findall(page)
-                    for number in phone_nums:
-                        if not any(number in records for records in self.phones):
-                            self.phones.append((number,visiting))
+                    #phone_nums = regex4.findall(page)
+                    #for number in phone_nums:
+                    #    if not any(number in records for records in self.phones):
+                    #        self.phones.append((number,visiting))
                     #Find Links:
                     #create initial list of links and make a filter list of all the links with slash
                     links = regex1.findall(page)
                     linksrel = list(filter(regex2.match,links))
                     linksabs = [m.group(2) for m in (regex3.match(a) for a in links) if m] #creates a list of the absolute links for this domain
-                    alllinksabs = [m.group(0) for m in (regex3_5.match(a) for a in links) if m] #creates a list of all absolute links
+                    #alllinksabs = [m.group(0) for m in (regex3_5.match(a) for a in links) if m] #creates a list of all absolute links
                     #Make Page and Add to visit:
-                    self.makepage(self.filesmade,visiting,len(linksrel),len(alllinksabs),page)
+                    #self.makepage(self.filesmade,visiting,len(linksrel),len(alllinksabs),page)
+                    self.makepage(self.filesmade,visiting,page)
                     self.visited.update(visiting=1)
                     #End the program if the number of files made would exceed the limit
                     if limited and self.filesmade >= limit:
@@ -174,7 +175,7 @@ class crawler():
         print("Found {0} names with titles".format(len(self.nameslist)))
         print(self.nameslist)
     #Makes page with the order visited, the number of links relative and absolute and the content of the html
-    def makepage(self,num,site,relative,absolute,content):
+    def makepage(self,num,site,content):
         if not os.path.exists(self.baseurlbegin):
             os.makedirs(self.baseurlbegin)
             print("Folder did not exist making Folder")
@@ -183,7 +184,7 @@ class crawler():
         title = self.baseurlbegin + "/" + self.baseurlbegin + "page#" + str(num) + ".txt"
         page = open(title,'w+')
         self.filesmade +=1
-        page.write("URL:{0}\nNumber of Relative Links:{1}\nNumber of Absolute Links:{2}\n".format(site,relative,absolute))
+        page.write("URL:{0} \n".format(site))
         page.write(content)
         page.close()
 #main function to test
