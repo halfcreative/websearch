@@ -184,7 +184,7 @@ class crawler():
         title = self.baseurlbegin + "/" + self.baseurlbegin + "page#" + str(num) + ".txt"
         page = open(title,'w+')
         self.filesmade +=1
-        page.write("URL:{0} \n".format(site))
+        page.write("URL[{0}]".format(site))
         page.write(content)
         page.close()
 #main function to test
