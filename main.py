@@ -52,7 +52,8 @@ class MainWindow(tk.Frame):
             if not os.path.exists('dicts'):
                 os.makedirs('dicts')
             try:
-                ri = open('dicts/{0}.pkt'.format(baseurl))
+                with open('dicts/' + baseurl + '.pkl', 'rb') as f:
+                    ri = pickle.load(f)
             except FileNotFoundError as e0:
                 #rev index doesnt exist, check for crawled files
                 try:
