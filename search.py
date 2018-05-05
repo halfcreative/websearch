@@ -25,7 +25,9 @@ def retrieve(q_words, ri):
     for rd in doclist:    #create document vectors
         vec = []
         for i in range(len(q_words)):
-            if ri[q_words[i]].get(rd) == None:
+            if ri.get(q_words[i]) == None:
+                weight = 0.0
+            elif ri[q_words[i]].get(rd) == None:
                 weight = 0.0
             else:
                 weight = ri[q_words[i]][rd]
