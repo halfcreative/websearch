@@ -97,8 +97,11 @@ def retrieve(q_words, revind):
     cos_similarity = []
     for h in range(len(docveclist)):
         cos_similarity.append(cos_sim(q_vec, docveclist[h]))
-        
-    results_w_score = list(zip(doclist, cos_similarity))
+     
+    urllist = []
+    for d in range(len(doclist)):
+        urllist.append(revind['<urldict>'][doclist[d]])
+    results_w_score = list(zip(urllist, cos_similarity))
     results_w_score.sort(key = operator.itemgetter(1), reverse = True)
     for r in range(len(results_w_score)):
          print('{0}'.format(results_w_score[r]))

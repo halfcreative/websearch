@@ -32,9 +32,11 @@ class r_index:
                self.domain = dom
                self.totaldocs = 0.0
                self.rind = {}
+               self.doc2url = {}
                self.rind['<total>'] = 0.0
                self.construct()
                self.finalize()
+               
 
         def construct(self):
             if not os.path.exists(self.domain):
@@ -47,23 +49,28 @@ class r_index:
 
                     
         def scan_doc(self, doc):
-            self.totaldocs += 1
-            body = open(self.domain+'/'+doc, 'r').read()
-            text = text_from_html(body)
-            words = prep.prep(text)
-            for w in words:
-                if w not in self.d.keys():
-                    self.d[w] = {}
-                    self.d[w]['<total>'] = 1.0
-                    self.d[w]['<df>'] = 1.0
-                    self.d[w][doc] = 1.0
-                elif doc not in self.d[w].keys():
-                    self.d[w][doc] = 1.0
-                    self.d[w]['<total>'] += 1.0
-                    self.d[w]['<df>'] += 1.0
-                else:
-                    self.d[w][doc] +=1.0
-                    self.d[w]['<total>'] += 1.0
+            try:
+                body = open(self.domain+'/'+doc, 'r').read()
+            except UnicodeDecodeError as e:
+                return
+            else:
+                self.totaldocs += 1
+                self.doc2url[doc] = re.search(r'URL:(.*)\<', body).group(1)
+                text = text_from_html(body)
+                words = prep.prep(text)
+                for w in words:
+                    if w not in self.d.keys():
+                        self.d[w] = {}
+                        self.d[w]['<total>'] = 1.0
+                        self.d[w]['<df>'] = 1.0
+                        self.d[w][doc] = 1.0
+                    elif doc not in self.d[w].keys():
+                        self.d[w][doc] = 1.0
+                        self.d[w]['<total>'] += 1.0
+                        self.d[w]['<df>'] += 1.0
+                    else:
+                        self.d[w][doc] +=1.0
+                        self.d[w]['<total>'] += 1.0
 
                                 
         def finalize(self): #does the math, then stores the index as a .pkl file
@@ -71,6 +78,7 @@ class r_index:
                 print()
                 idf = math.log10(self.totaldocs/self.d[w]['<df>'])
                 for doc in self.d[w]:
+                    self.rind['<urldict>'] = self.doc2url
                     if w not in self.rind.keys():
                         self.rind[w] = {}
                     self.rind[w][doc] = 0.0
@@ -78,8 +86,6 @@ class r_index:
                     self.rind[w][doc] = tf*idf
                 self.rind[w]['<df>'] = self.d[w]['<df>']
                 self.rind['<total>'] = self.totaldocs
-                
-                print('readying the pickle')
             with open('dicts/'+ self.domain + '.pkl', 'wb') as f:
                 pickle.dump(self.rind, f, pickle.HIGHEST_PROTOCOL)
             print("it is done.")
