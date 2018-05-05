@@ -47,6 +47,8 @@ class r_index:
                     self.scan_doc(file)
                     pb.yep_rand()
 
+        def get(self,w):
+            return self.rind.get(w)
                     
         def scan_doc(self, doc):
             try:
