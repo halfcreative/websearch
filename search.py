@@ -5,6 +5,12 @@ Created on Thu Apr 19 13:28:25 2018
 
 @author: nate
 """
+import collections
+import math
+import numpy as np
+import operator
+
+
 def retrieve(q_words, revind):
     q_vec = []
     relevant_docs = []  #harvest all docs that contain any q_words

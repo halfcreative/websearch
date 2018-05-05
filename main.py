@@ -3,12 +3,8 @@ import search
 from revind import r_index
 from crawler import crawler
 import re
-import collections
-import math
-import numpy as np
 import pickle
 import prep
-import operator
 import tkinter as tk
 import os
 
