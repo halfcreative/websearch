@@ -66,9 +66,7 @@ class MainWindow(tk.Frame):
                 else:
                     ri = r_index(baseurl)
                     #Crawler files exist!
-            else:
-                #Reverse Index found!
-                search.retrieve(searchterms,ri)
+        search.retrieve(searchterms,ri)
                 
 root = tk.Tk()
 root.geometry('300x400')
