@@ -34,7 +34,6 @@ def main():
                     domaincrawl.crawl('http://www.'+domain+'.edu',100)
                     print('creating reverse index...')
                     ri = r_index(domain)
-                    ri.make_file()
                     if 'javascript' in ri.d.keys():
                         print('its not filtering out javascript yet')
                     else:

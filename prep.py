@@ -2,11 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import re
-swFilter = True
-stem = True
 swList = open('sw.txt', 'r').read()
 
-def prep(str):
+def prep(str, swFilter, stem):
     str = re.sub(r'[^\w\'\s]', '', str)
     words = str.lower().split()
     
