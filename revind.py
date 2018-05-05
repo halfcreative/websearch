@@ -5,7 +5,7 @@ from bs4.element import Comment
 import pickle
 import prep
 import math
-import progressbar
+#import progressbar
 #ripped straight from stackoverflow, 0 shame, 
 def tag_visible(element):
     if element.parent.name in ['style', 'script', 'head', 'title', 'meta', '[document]']:
@@ -42,10 +42,10 @@ class r_index:
             if not os.path.exists(self.domain):
                 print('domain folder not found')
             else:
-                pb = progressbar.Progressbar('scanning', len(os.listdir(self.domain)),69, 'X' )
+                #pb = progressbar.Progressbar('scanning', len(os.listdir(self.domain)),69, 'X' )
                 for file in os.listdir(self.domain):
                     self.scan_doc(file)
-                    pb.yep_rand()
+                    #pb.yep_rand()
 
         def get(self,w):
             return self.rind.get(w)
@@ -57,11 +57,12 @@ class r_index:
                 return
             else:
                 self.totaldocs += 1
-                thing = re.search(r'URL:(.*)\<', body)
+                regex = re.compile(r'^(URL)\[(.*)\]')
+                thing = regex.search(body)
                 if thing == None:
                     url = 'URL NOT FOUND'
                 else:
-                    url = thing.group(1)
+                    url = thing.group(2)
                 self.doc2url[doc] = url
                 text = text_from_html(body)
                 words = prep.prep(text)
@@ -82,7 +83,6 @@ class r_index:
                                 
         def finalize(self): #does the math, then stores the index as a .pkl file
             for w in self.d.keys():
-                print()
                 idf = math.log10(self.totaldocs/self.d[w]['<df>'])
                 for doc in self.d[w]:
                     self.rind['<urldict>'] = self.doc2url
