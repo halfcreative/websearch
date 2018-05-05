@@ -3,8 +3,10 @@
 
 import re
 swList = open('sw.txt', 'r').read()
+swFilter = True
+stem = True
 
-def prep(str, swFilter, stem):
+def prep(str):
     str = re.sub(r'[^\w\'\s]', '', str)
     words = str.lower().split()
     
