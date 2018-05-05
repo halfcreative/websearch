@@ -17,7 +17,7 @@ import operator
 def main():
     # load GUI, w input for domain and search term
     # if domain is not on file, ask user if they'd like to make a file.
-    # if they would, crawl us a new mf database
+    # if they would, crawl us a new database
     
     domain = input("What domain are we searchin?: ")
     try:
@@ -63,9 +63,10 @@ def retrieve(q_words, revind):
     q_vec = []
     relevant_docs = []  #harvest all docs that contain any q_words
     for qw in q_words:
-        for d in revind[qw]:
-            if revind[qw]!= 0.0 and d != '<df>' and d != '<total>':
-                relevant_docs.append(d)
+        if revind.get(qw) != None:    
+            for d in revind[qw]:
+                if revind[qw] != 0.0 and d != '<df>' and d != '<total>':
+                    relevant_docs.append(d)
             
     doclist = list(set(relevant_docs))
     docveclist = []
@@ -81,27 +82,39 @@ def retrieve(q_words, revind):
     
     freq_info = collections.Counter(q_words)
     max_freq = freq_info.most_common(1)[0][1] #make query vectors
+    
     for i in range(len(q_words)): 
         freq_wq = freq_info[q_words[i]]
-        if revind[q_words[i]]['<df>'] <= 0:
-            q_vec.append(0.0)
+        if revind.get(q_words[i]) != None:
+            if revind[q_words[i]]['<df>'] <= 0.0:
+                q_vec.append(0.0)
+            else:
+                q_vec.append((freq_wq / max_freq) * math.log10(revind['<total>']/revind[q_words[i]]['<df>'] ))
         else:
-            q_vec.append(freq_wq * max_freq *math.log10( revind['<total>']/revind[q_words[i]]['<df>'] ))
+            q_vec.append(0.0)
         
     #compute cosine similarities
     cos_similarity = []
     for h in range(len(docveclist)):
         cos_similarity.append(cos_sim(q_vec, docveclist[h]))
         
-    results_w_score = list(zip(doclist,cos_similarity))
+    results_w_score = list(zip(doclist, cos_similarity))
     results_w_score.sort(key = operator.itemgetter(1), reverse = True)
     for r in range(len(results_w_score)):
-        print('{0}'.format(results_w_score[r]))
+         print('{0}'.format(results_w_score[r]))
+ 
 def cos_sim(a,b):
     dp = np.dot(a,b)
-    norm_a = np.linalg.norm(a)
-    norm_b = np.linalg.norm(b)
-    return dp/(norm_a * norm_b)
+    aM = np.linalg.norm(a)
+    bM = np.linalg.norm(b)
+    cs = dp/(aM*bM)
+    #due to discrepancies in numpy's sigfigs for the relevant data, 
+    #comparisons that should yield a cs of 1 yield 1.00000002.
+    #since that as a value would ve visibly impossible, and since rounding of these "numpy.float64" objects wouldn;t
+    #have that demoralizing in any other situation, this is how we're gonna feel ok about ourselves
+    if cs > 1.0:   
+        cs = 1.0
+    return cs
         
             
 

@@ -5,7 +5,7 @@ from bs4.element import Comment
 import pickle
 import prep
 import math
-
+import progressbar
 #ripped straight from stackoverflow, 0 shame, 
 def tag_visible(element):
     if element.parent.name in ['style', 'script', 'head', 'title', 'meta', '[document]']:
@@ -40,8 +40,10 @@ class r_index:
             if not os.path.exists(self.domain):
                 print('domain folder not found')
             else:
+                pb = progressbar.Progressbar('scanning', len(os.listdir(self.domain)),69, 'X' )
                 for file in os.listdir(self.domain):
                     self.scan_doc(file)
+                    pb.yep_rand()
 
                     
         def scan_doc(self, doc):
@@ -55,7 +57,7 @@ class r_index:
                     self.d[w]['<total>'] = 1.0
                     self.d[w]['<df>'] = 1.0
                     self.d[w][doc] = 1.0
-                if doc not in self.d[w].keys():
+                elif doc not in self.d[w].keys():
                     self.d[w][doc] = 1.0
                     self.d[w]['<total>'] += 1.0
                     self.d[w]['<df>'] += 1.0
@@ -66,6 +68,7 @@ class r_index:
                                 
         def finalize(self): #does the math, then stores the index as a .pkl file
             for w in self.d.keys():
+                print()
                 idf = math.log10(self.totaldocs/self.d[w]['<df>'])
                 for doc in self.d[w]:
                     if w not in self.rind.keys():
@@ -76,8 +79,10 @@ class r_index:
                 self.rind[w]['<df>'] = self.d[w]['<df>']
                 self.rind['<total>'] = self.totaldocs
                 
-                with open('dicts/'+ self.domain + '.pkl', 'wb') as f:
-                    pickle.dump(self.rind, f, pickle.HIGHEST_PROTOCOL)
+                print('readying the pickle')
+            with open('dicts/'+ self.domain + '.pkl', 'wb') as f:
+                pickle.dump(self.rind, f, pickle.HIGHEST_PROTOCOL)
+            print("it is done.")
 
         def toString(self):
             out = 'WORDS:\n'

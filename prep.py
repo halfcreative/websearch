@@ -26,8 +26,8 @@ def prep(str):
 def stem(word): #still 100% trash, but no need for premature optimizaition
     #suffix-stripping:
     word = re.sub(r's$', '', word)
-    word = re.sub(r'ed', '', word)
-    word = re.sub(r'([^i]ly$)|(ily$)', '', word)
+    word = re.sub(r'ed$', '', word)
+    word = re.sub(r'i?ly$', '', word)
     word = re.sub(r'ing$', '', word)
     word = re.sub(r"\'\w*$", '', word) #an apostrophe and anything after it
     return word
