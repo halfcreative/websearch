@@ -1,5 +1,5 @@
 # Search Engine
-This is a search engine, written in python for a class on Artificial Intelligence.
+This is a search engine, written in python
 
 When given a domain and a search term, the search engine will produce the 5 most relavent links to that term within that domain.
 The Search Engine has 5 parts:
@@ -13,4 +13,4 @@ Reverse Index
 Search (weights added)
   -Adds weights to terms for relavency
 GUI
-  -Front Facing Product
+  -the face of the project
